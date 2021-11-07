@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+    public Animator animator;
     public int maxHealth = 100;
     public int currentHealth;
     public HealthBar healthBar;
@@ -13,25 +14,32 @@ public class EnemyHealth : MonoBehaviour
     {
         isDie = false;
         currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
+        if (healthBar != null)
+            healthBar.SetMaxHealth(currentHealth * 100 / maxHealth);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void TakeDamage(int damage)
     {
+        if (animator != null)
+        {
+            //Debug.Log("Trigger Hurt");
+            animator.SetTrigger("Hurt");
+        }
         currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
+        if (healthBar != null)
+            healthBar.SetHealth(currentHealth * 100 / maxHealth);
         if (currentHealth <= 0)
             Die();
     }
     public void Die()
     {
         isDie = true;
-        Destroy(gameObject,0.25f);
+        Destroy(gameObject, 0.25f);
     }
 }
