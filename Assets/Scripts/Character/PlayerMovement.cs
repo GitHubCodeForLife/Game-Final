@@ -69,15 +69,29 @@ public class PlayerMovement : MonoBehaviour
             
         }
     }
+    //void PlayerDoubleJump()
+    //{
+    //    int jumpStep = 0;
+    //    if (Input.GetKeyDown(KeyCode.Space)&&jumpStep!=2)
+    //    {
+    //        jumpStep++;
+    //        animator.SetBool("IsJump", true);
+    //        rigidbody2d.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+    //    }
+    //    if(rigidbody2d.velocity.y <= 0)
+    //        animator.SetBool("IsJump", false);
+
+    //}
+
     void PlayerJump()
     {
-        if (Input.GetKeyDown(KeyCode.Space)&&isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             animator.SetBool("IsJump", true);
             rigidbody2d.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
             isGrounded = false;
         }
-        if(rigidbody2d.velocity.y <= 0)
+        if (rigidbody2d.velocity.y <= 0)
             animator.SetBool("IsJump", false);
 
     }

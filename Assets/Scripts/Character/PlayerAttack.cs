@@ -50,6 +50,7 @@ public class PlayerAttack : MonoBehaviour
         animator.SetTrigger("Slash");
         //Detect enemies in range of attack 
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+        Debug.Log(hitEnemies.Length);
         if (hitEnemies.Length >= 1)
         {
             Instantiate(impactEffect, attackPoint.position, attackPoint.rotation);
@@ -57,7 +58,7 @@ public class PlayerAttack : MonoBehaviour
         //Damage them
         foreach (Collider2D enemy in hitEnemies)
         {
-            //enemy.GetComponent<EnemyHealth>().TakeDamage(attackDamage);
+            enemy.GetComponent<EnemyHealth>().TakeDamage(attackDamage);
             Debug.Log(enemy.name);
         }
 

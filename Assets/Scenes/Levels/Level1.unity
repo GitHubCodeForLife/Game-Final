@@ -213,6 +213,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hero
       objectReference: {fileID: 0}
+    - target: {fileID: 2285587197739465596, guid: 7a47aeff43ef63d449296e951e563756, type: 3}
+      propertyPath: direction
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2285587197739465597, guid: 7a47aeff43ef63d449296e951e563756, type: 3}
       propertyPath: m_RootOrder
       value: 1
