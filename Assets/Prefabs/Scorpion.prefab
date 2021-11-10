@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &889600867
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 889600868}
+  m_Layer: 7
+  m_Name: Damge Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &889600868
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889600867}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.104, y: 0.564, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8406999691214773272}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8406999690222545340
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,7 +41,7 @@ GameObject:
   - component: {fileID: 8406999690222545343}
   - component: {fileID: 8406999690222545337}
   - component: {fileID: 8406999690222545342}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Health Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,7 +175,7 @@ GameObject:
   - component: {fileID: 8406999690636626805}
   - component: {fileID: 8406999690636626810}
   - component: {fileID: 8406999690636626811}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +277,7 @@ GameObject:
   - component: {fileID: 8406999691214773275}
   - component: {fileID: 8406999691214773274}
   - component: {fileID: 8406999691214773269}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scorpion
   m_TagString: Enemies
   m_Icon: {fileID: 0}
@@ -266,6 +296,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8406999690636626808}
+  - {fileID: 889600868}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -403,6 +434,8 @@ MonoBehaviour:
   currentHealth: 100
   healthBar: {fileID: 8406999690222545342}
   isDie: 0
+  damageEffect: {fileID: 5042599009313901737, guid: 9c7867545d99e8d44ab6d1d6801f5f07, type: 3}
+  damagePoint: {fileID: 889600868}
 --- !u!1 &8406999691258954708
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,7 +447,7 @@ GameObject:
   - component: {fileID: 8406999691258954711}
   - component: {fileID: 8406999691258954705}
   - component: {fileID: 8406999691258954710}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -489,7 +522,7 @@ GameObject:
   - component: {fileID: 8406999691370738287}
   - component: {fileID: 8406999691370738281}
   - component: {fileID: 8406999691370738286}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}

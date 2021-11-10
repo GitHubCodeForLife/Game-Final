@@ -9,6 +9,9 @@ public class EnemyHealth : MonoBehaviour
     public int currentHealth;
     public HealthBar healthBar;
     public bool isDie;
+
+    public GameObject damageEffect;
+    public Transform damagePoint;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +29,13 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+
+        //Show damge UI
+        float index = Random.Range(1, 100);
+        float range = (float)(index * 0.01);
+        GameObject gameObject = Instantiate(damageEffect, damagePoint.position+new Vector3(range, 0), damagePoint.rotation);
+        gameObject.GetComponent<DamgeUI>().SetDamage(damage);
+
         if (animator != null)
         {
             //Debug.Log("Trigger Hurt");
