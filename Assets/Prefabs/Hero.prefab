@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 2285587197739465593}
   - component: {fileID: 2285587197739465596}
   - component: {fileID: 2285587197739465599}
+  - component: {fileID: 77549647}
   m_Layer: 3
   m_Name: Hero
   m_TagString: Player
@@ -152,8 +153,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.019618511, y: -0.008850068}
-  m_Size: {x: 0.3747015, y: 0.60126954}
+  m_Offset: {x: -0.052829266, y: -0.030990481}
+  m_Size: {x: 0.79536724, y: 1.0831919}
   m_Direction: 0
 --- !u!95 &2285587197739465593
 Animator:
@@ -212,3 +213,15 @@ MonoBehaviour:
   attackDamage: 30
   FireSpeedTime: 0.5
   attackTime: 0.5
+--- !u!114 &77549647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2285587197739465590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c88f2ca72c77f34c8e60740b16baf1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

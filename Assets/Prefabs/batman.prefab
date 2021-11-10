@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &337502171
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 337502172}
+  m_Layer: 7
+  m_Name: Damge Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &337502172
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337502171}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.1, y: 2.17, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2481295820957868628}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2481295820688427969
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,7 +41,7 @@ GameObject:
   - component: {fileID: 2481295820688427998}
   - component: {fileID: 2481295820688427996}
   - component: {fileID: 2481295820688427999}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +117,7 @@ GameObject:
   - component: {fileID: 2481295820887010663}
   - component: {fileID: 2481295820887010662}
   - component: {fileID: 2481295820887010665}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,7 +218,7 @@ GameObject:
   - component: {fileID: 2481295820957868629}
   - component: {fileID: 2481295820957868626}
   - component: {fileID: 2481295820957868627}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: batman
   m_TagString: Enemies
   m_Icon: {fileID: 0}
@@ -207,6 +237,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 2481295820887010664}
+  - {fileID: 337502172}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -324,7 +355,7 @@ GameObject:
   - component: {fileID: 2481295822301775101}
   - component: {fileID: 2481295822301775099}
   - component: {fileID: 2481295822301775098}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Health Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -457,7 +488,7 @@ GameObject:
   - component: {fileID: 2481295822713653934}
   - component: {fileID: 2481295822713653932}
   - component: {fileID: 2481295822713653935}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
