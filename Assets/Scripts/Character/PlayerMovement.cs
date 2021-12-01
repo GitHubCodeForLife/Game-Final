@@ -17,14 +17,21 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded = true;
     public float jumpForce = 5f;
 
-    public int direction = 1;
+  
     private void Awake()
     {
         animator = GetComponent<Animator>();
         rigidbody2d = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
 
-        direction = transform.localScale.x <= 0 ? -1 : 1;
+      
+    }
+
+    private void FixedUpdate()
+    {
+        //Debug.Log("This");
+        
+       // rigidbody2d.AddForce(new Vector2(0,9.8f));
     }
 
     // Update is called once per frame
@@ -50,17 +57,19 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(inputX));
         if (inputX > 0)
         {
-            transform.localScale = new Vector3(1f, 1f, 1.0f);
-            direction = 1;
+            transform.rotation = new Quaternion(0, 0, 0,0);
+            //transform.localScale = new Vector3(1f, 1f, 1.0f);
+            
             //rigidbody2d.rotation = 180;
             // transform.rotation = 
             //sr.flipX = false;
         }
         else if (inputX < 0)
         {
-            transform.localScale = new Vector3(-1f, 1f, 1.0f);
+            transform.rotation = new Quaternion(0, 180, 0, 0);
+
+            //transform.localScale = new Vector3(-1f, 1f, 1.0f);
             //rigidbody2d.rotation = 0;
-            direction = -1;
             //   sr.flipX = true;
         }
         else

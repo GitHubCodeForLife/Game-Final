@@ -71,7 +71,7 @@ public class PlayerAttack : MonoBehaviour
         //Debug.Log(attackPoint.rotation.x);
 
         GameObject bullet = Instantiate(bulletPrefab, attackPoint.position, attackPoint.rotation);
-        bullet.GetComponent<Bullet>().SetDirection(GetComponent<PlayerMovement>().direction);
+       
     }
 
     private void OnDrawGizmosSelected()
