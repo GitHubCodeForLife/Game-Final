@@ -20,7 +20,10 @@ public class PlayerMovement_v2 : MonoBehaviour
     private int jumpStep = 2;
     public float jumpForce = 5f;
 
+<<<<<<< HEAD
     public int direction = 1;
+=======
+>>>>>>> 53a4493c983980d0a1e30c7ebad2d99d26dad264
     private void Awake()
     {
         jumpStep = 2;
@@ -28,7 +31,10 @@ public class PlayerMovement_v2 : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
 
+<<<<<<< HEAD
         direction = transform.localScale.x <= 0 ? -1 : 1;
+=======
+>>>>>>> 53a4493c983980d0a1e30c7ebad2d99d26dad264
     }
 
     // Update is called once per frame
@@ -55,6 +61,7 @@ public class PlayerMovement_v2 : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(inputX));
         if (inputX > 0)
         {
+<<<<<<< HEAD
             transform.localScale = new Vector3(1f, 1f, 1.0f);
             direction = 1;
             //rigidbody2d.rotation = 180;
@@ -67,6 +74,16 @@ public class PlayerMovement_v2 : MonoBehaviour
             //rigidbody2d.rotation = 0;
             direction = -1;
             //   sr.flipX = true;
+=======
+            transform.rotation = new Quaternion(0, 0, 0, 0);
+          
+        }
+        else if (inputX < 0)
+        {
+            transform.rotation = new Quaternion(0, 180, 0, 0);
+
+         
+>>>>>>> 53a4493c983980d0a1e30c7ebad2d99d26dad264
         }
         else
         {

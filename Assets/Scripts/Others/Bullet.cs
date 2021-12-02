@@ -5,7 +5,6 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float speed = 20f;
-    int direction = 1;
     public GameObject impactEffect;
     public int damage = 20;
 
@@ -19,13 +18,12 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(speed, 0f, 0f) * Time.deltaTime* direction;
+       // Debug.Log("Bullet: " + transform.rotation);
+        int direction = transform.rotation.y == 0 ? 1 : -1;
+        transform.position += new Vector3(speed, 0f, 0f) * Time.deltaTime*direction;
     }
  
-    public void SetDirection(int direction)
-    {
-        this.direction = direction;
-    }
+   
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player")) return;

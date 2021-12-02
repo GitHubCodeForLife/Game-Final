@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour
 {
     public Animator animator;
     public int maxHealth = 100;
     public int currentHealth;
-    public HealthBar healthBar;
+    public Slider healthBar;
     public bool isDie;
 
     public GameObject damageEffect;
@@ -18,7 +19,7 @@ public class EnemyHealth : MonoBehaviour
         isDie = false;
         currentHealth = maxHealth;
         if (healthBar != null)
-            healthBar.SetMaxHealth(currentHealth * 100 / maxHealth);
+            healthBar.value  = (currentHealth * 100 / maxHealth);
     }
 
     // Update is called once per frame
@@ -43,7 +44,7 @@ public class EnemyHealth : MonoBehaviour
         }
         currentHealth -= damage;
         if (healthBar != null)
-            healthBar.SetHealth(currentHealth * 100 / maxHealth);
+            healthBar.value= (currentHealth * 100 / maxHealth);
         if (currentHealth <= 0)
             Die();
     }
