@@ -172,13 +172,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-<<<<<<< HEAD
-  m_Offset: {x: 0.21033305, y: 0.16605234}
-  m_Size: {x: 0.79947627, y: 1.3972645}
-=======
   m_Offset: {x: 0.114233196, y: 0.12082887}
   m_Size: {x: 0.60727656, y: 0.8771949}
->>>>>>> 53a4493c983980d0a1e30c7ebad2d99d26dad264
   m_Direction: 0
 --- !u!114 &670419680
 MonoBehaviour:
@@ -197,10 +192,6 @@ MonoBehaviour:
   groundSensor: {fileID: 268884331873579053}
   dustEffect: {fileID: 9179861789467126808, guid: 151bd7034a8875f409659aa79055e720, type: 3}
   jumpForce: 6
-<<<<<<< HEAD
-  direction: 1
-=======
->>>>>>> 53a4493c983980d0a1e30c7ebad2d99d26dad264
 --- !u!114 &5873433121536402440
 MonoBehaviour:
   m_ObjectHideFlags: 0
