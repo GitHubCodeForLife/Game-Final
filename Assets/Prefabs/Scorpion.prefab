@@ -274,9 +274,9 @@ GameObject:
   - component: {fileID: 8406999691214773272}
   - component: {fileID: 8406999691214773273}
   - component: {fileID: 8406999691214773278}
-  - component: {fileID: 8406999691214773275}
   - component: {fileID: 8406999691214773274}
   - component: {fileID: 8406999691214773269}
+  - component: {fileID: 1026538786}
   m_Layer: 7
   m_Name: Scorpion
   m_TagString: Enemies
@@ -370,27 +370,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!50 &8406999691214773275
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8406999691214773279}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &8406999691214773274
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -432,10 +411,31 @@ MonoBehaviour:
   animator: {fileID: 8406999691214773278}
   maxHealth: 100
   currentHealth: 100
-  healthBar: {fileID: 8406999690222545342}
+  healthBar: {fileID: 8406999690222545337}
   isDie: 0
   damageEffect: {fileID: 5042599009313901737, guid: 9c7867545d99e8d44ab6d1d6801f5f07, type: 3}
   damagePoint: {fileID: 889600868}
+--- !u!50 &1026538786
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8406999691214773279}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &8406999691258954708
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1421883011}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Attack Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,9 +45,10 @@ GameObject:
   - component: {fileID: 628280856323961722}
   - component: {fileID: 670419680}
   - component: {fileID: 5873433121536402440}
-  m_Layer: 0
+  - component: {fileID: 1854348352}
+  m_Layer: 3
   m_Name: Samurai
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -211,6 +212,20 @@ MonoBehaviour:
   attackRange: 1
   attackDamage: 50
   attackTime: 0.01
+--- !u!114 &1854348352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628280856323961665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c88f2ca72c77f34c8e60740b16baf1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lives: 3
+  textLife: {fileID: 0}
 --- !u!1 &6823168930903111811
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,7 +237,7 @@ GameObject:
   - component: {fileID: 268884331873579053}
   - component: {fileID: 6199685528669564230}
   - component: {fileID: 759581964}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GroundSensor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

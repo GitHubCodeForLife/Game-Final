@@ -54,10 +54,9 @@ public class PlayerAttack_v2 : MonoBehaviour
         //Damage them
         foreach (Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<EnemyHealth>().TakeDamage(attackDamage);
+            enemy.GetComponent<EnemyHealth>().TakeCritDamage(attackDamage);
             Debug.Log(enemy.name);
         }
-
     }
 
     private void OnDrawGizmosSelected()
