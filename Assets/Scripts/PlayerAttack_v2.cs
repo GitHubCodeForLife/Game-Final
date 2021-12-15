@@ -10,19 +10,27 @@ public class PlayerAttack_v2 : MonoBehaviour
     public Transform attackPoint;
  
     public float attackRange = 5;
-    public int attackDamage = 30;
-
+    public int attackDamage = 50;
+    public float grenadeTime = 1f;
     public float attackTime = 0.5f;
     private float currentAttackTime;
+    private GrenadeFactory grenadeFactory;
+    private string grenadeType;
 
-
+ 
     // Start is called before the first frame update
     void Awake()
     {
         currentAttackTime = 0;
         animator = GetComponent<Animator>();
+        InitialWeapon();
     }
-
+    private void InitialWeapon()
+    {
+        //Read  Grenade form Local Storage
+        grenadeFactory = FindObjectOfType<GrenadeFactory>();
+        grenadeType = "IceGrenade";
+    }
     // Update is called once per frame
     void Update()
     {
@@ -31,9 +39,21 @@ public class PlayerAttack_v2 : MonoBehaviour
             currentAttackTime = attackTime;
             Attack();
         }
+        if (Input.GetKeyDown(KeyCode.G) && grenadeTime <= 0)
+        {
+            ThrowGrenade();
+            grenadeTime = 1f;
+        }
+        grenadeTime = grenadeTime - Time.deltaTime < 0 ? 0 : grenadeTime - Time.deltaTime;
 
         currentAttackTime = currentAttackTime - Time.deltaTime < 0 ? 0 : currentAttackTime - Time.deltaTime;
     }
+    private void ThrowGrenade()
+    {
+        int direction = transform.rotation.y == 0 ? 1 : -1;
+        grenadeFactory.SpawnGrenade(attackPoint.position, attackPoint.rotation, new Vector2(direction * 5, 5), grenadeType);
+    }
+
     void Attack()
     {
         //Play attack animaiton
@@ -41,17 +61,6 @@ public class PlayerAttack_v2 : MonoBehaviour
         //Detect enemies in range of attack 
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
         Debug.Log(hitEnemies.Length);
-        //if (hitEnemies.Length >= 1)
-        //{
-        //    int index = (int)Random.Range(1, 4);
-        //    GameObject gameObject;
-        //    if (index == 1)
-        //        gameObject = Instantiate(damageEffect, attackPoint.position, attackPoint.rotation);
-        //    else
-        //        gameObject = Instantiate(damageCritEffect, attackPoint.position, attackPoint.rotation);
-        //    gameObject.GetComponent<DamgeUI>().SetDamage(attackDamage);
-        //}
-        //Damage them
         foreach (Collider2D enemy in hitEnemies)
         {
             enemy.GetComponent<EnemyHealth>().TakeCritDamage(attackDamage);

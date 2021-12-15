@@ -11,10 +11,8 @@ public class PlayerMovement_v2 : MonoBehaviour
     private SpriteRenderer sr;
     private float inputX;
 
-    public Transform attackPoint;
     public Transform groundSensor;
     public GameObject dustEffect;
-
 
     //Jump
     private int jumpStep = 2;
@@ -26,13 +24,11 @@ public class PlayerMovement_v2 : MonoBehaviour
         animator = GetComponent<Animator>();
         rigidbody2d = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
-
     }
 
     // Update is called once per frame
     void Update()
     {
-
         PlayerMoveKeyBoard();
         AnimatePlayer();
         PlayerJump();
@@ -54,13 +50,11 @@ public class PlayerMovement_v2 : MonoBehaviour
         if (inputX > 0)
         {
             transform.rotation = new Quaternion(0, 0, 0, 0);
-          
+
         }
         else if (inputX < 0)
         {
             transform.rotation = new Quaternion(0, 180, 0, 0);
-
-         
         }
         else
         {
@@ -68,19 +62,6 @@ public class PlayerMovement_v2 : MonoBehaviour
 
         }
     }
-    //void PlayerDoubleJump()
-    //{
-    //    int jumpStep = 0;
-    //    if (Input.GetKeyDown(KeyCode.Space)&&jumpStep!=2)
-    //    {
-    //        jumpStep++;
-    //        animator.SetBool("IsJump", true);
-    //        rigidbody2d.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
-    //    }
-    //    if(rigidbody2d.velocity.y <= 0)
-    //        animator.SetBool("IsJump", false);
-
-    //}
 
     void PlayerJump()
     {

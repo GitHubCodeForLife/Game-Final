@@ -45,9 +45,10 @@ GameObject:
   - component: {fileID: 7152880358833038730}
   - component: {fileID: 8147158008540189421}
   - component: {fileID: 4450681717470196964}
+  - component: {fileID: 1066704650117607656}
   m_Layer: 0
   m_Name: Death
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -187,9 +188,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  attackPoint: {fileID: 0}
+  groundSensor: {fileID: 241070619183035688}
+  dustEffect: {fileID: 9179861789467126808, guid: 151bd7034a8875f409659aa79055e720, type: 3}
   jumpForce: 6
-  direction: 1
 --- !u!114 &4450681717470196964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,8 +207,18 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   attackPoint: {fileID: 241070619183035688}
-  impactEffect: {fileID: 5221231358566587090, guid: 2b291641be96bd04287a74f657b0a215, type: 3}
   attackRange: 1
   attackDamage: 30
-  FireSpeedTime: 0.5
   attackTime: 0.5
+--- !u!114 &1066704650117607656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8319600005051198765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c88f2ca72c77f34c8e60740b16baf1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

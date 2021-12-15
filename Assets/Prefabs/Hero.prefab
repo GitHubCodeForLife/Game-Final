@@ -188,9 +188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  attackPoint: {fileID: 2285587196949770037}
   jumpForce: 7
-  direction: 1
 --- !u!114 &2285587197739465599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,11 +205,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   attackPoint: {fileID: 2285587196949770037}
-  bulletPrefab: {fileID: 6608004940868845668, guid: 65436f943b910074da61bbea09bb3e89, type: 3}
-  impactEffect: {fileID: 5221231358566587090, guid: 2b291641be96bd04287a74f657b0a215, type: 3}
   attackRange: 0.5
   attackDamage: 30
   FireSpeedTime: 0.5
+  grenadeTime: 1
   attackTime: 0.5
 --- !u!114 &77549647
 MonoBehaviour:

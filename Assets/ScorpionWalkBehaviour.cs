@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WalkBehaviour : StateMachineBehaviour
+public class ScorpionWalkBehaviour : StateMachineBehaviour
 {
     public float timer;
     public float maxTimer;

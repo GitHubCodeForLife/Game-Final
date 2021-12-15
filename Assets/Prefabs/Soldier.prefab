@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2096676430343226920}
   - component: {fileID: 2096676430343226921}
   - component: {fileID: 2096676430343226926}
+  - component: {fileID: 3377508679749187887}
   m_Layer: 3
   m_Name: Soldier
   m_TagString: Player
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1882399191
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b4373126c4f0acd4e998e816e1a39d53, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -138,9 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  attackPoint: {fileID: 2096676430796580825}
   jumpForce: 7
-  direction: 1
 --- !u!95 &2096676430343226921
 Animator:
   serializedVersion: 3
@@ -176,12 +175,26 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   attackPoint: {fileID: 2096676430796580825}
-  bulletPrefab: {fileID: 6608004940868845668, guid: 65436f943b910074da61bbea09bb3e89, type: 3}
-  impactEffect: {fileID: 5221231358566587090, guid: 2b291641be96bd04287a74f657b0a215, type: 3}
   attackRange: 1
   attackDamage: 30
   FireSpeedTime: 0.2
+  grenadeTime: 1
   attackTime: 0.5
+--- !u!114 &3377508679749187887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096676430343226903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c88f2ca72c77f34c8e60740b16baf1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textCoin: {fileID: 0}
+  lives: 3
+  textLife: {fileID: 0}
 --- !u!1 &2096676430796580824
 GameObject:
   m_ObjectHideFlags: 0

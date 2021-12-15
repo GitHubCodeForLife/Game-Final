@@ -6,10 +6,7 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    private int coin = 10;
-    public Text textCoin;
-    public int lives = 3;
-    public Text textLife;
+    PlayerResource playerResource;
 
     private Animator animator;
 
@@ -18,23 +15,20 @@ public class PlayerHealth : MonoBehaviour
 
     public void ChangeCoin(int amount)
     {
-        coin += amount;
-        if (textCoin) textCoin.text = coin.ToString();
+        playerResource.ChangeCoin(amount);
     }
-
     private void Awake()
     {
         animator = GetComponent<Animator>();
-        // = gameObject.GetComponent<Text>();
+        playerResource = FindObjectOfType<PlayerResource>();
     }
     public void TakeDamage(int damage)
     {
         //Debug.Log(damage);
         animator.SetTrigger("Hurt");
-        lives--;
-        if (lives == 0)
+        playerResource.ChangeLife(-1);
+        if (playerResource.IsDied())
             Died();
-        textLife.text = lives.ToString();
     }
 
     private void Died()

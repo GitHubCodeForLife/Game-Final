@@ -12,8 +12,7 @@ public class EnemyHealth : MonoBehaviour
     public bool isDie;
 
     public Transform damagePoint;
-    public GameSpawn gameSpawn;
-
+    public SpawnEffect gameSpawn;
     private void Awake()
     {
         animator = gameObject.GetComponent<Animator>();
@@ -80,12 +79,30 @@ public class EnemyHealth : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
+        {
+            Rigidbody2D rigidbody = collision.gameObject.GetComponent<Rigidbody2D>();
+            Debug.Log("Enemy Health 1: " + rigidbody.name);
+            if (rigidbody != null)
+            {
+                int direction = transform.rotation.y == 0 ? 1 : -1;
+                rigidbody.AddForce(new Vector2(5*direction, 5), ForceMode2D.Impulse);
+            }
             collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(1);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
-            collision.GetComponent<PlayerHealth>().TakeDamage(1);
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Rigidbody2D rigidbody = collision.gameObject.GetComponent<Rigidbody2D>();
+            Debug.Log("Enemy Health 2: " + rigidbody.name);
+            if (rigidbody != null)
+            {
+                int direction = transform.rotation.y == 0 ? 1 : -1;
+                rigidbody.AddForce(new Vector2(5 * direction, 5), ForceMode2D.Impulse);
+            }
+            collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(1);
+        }
     }
 }

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameSpawn : MonoBehaviour
+public class SpawnEffect : MonoBehaviour
 {
     public GameObject coinGameObject;
     public GameObject damageEffect;

@@ -8,7 +8,6 @@ public class BatmanAttackBehaviour : StateMachineBehaviour
     public float maxTimer;
     public float minTimer;
 
-
     private Transform playerPos;
     public float speed;
 
@@ -33,6 +32,7 @@ public class BatmanAttackBehaviour : StateMachineBehaviour
         //Debug.Log("Enemie Position: " + animator.transform.position);
         SetDirection(animator);
         animator.transform.position = Vector2.MoveTowards(animator.transform.position, target, speed * Time.deltaTime);
+        
     }
 
     private void SetDirection(Animator animator)
