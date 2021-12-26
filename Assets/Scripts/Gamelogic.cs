@@ -1,3 +1,4 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,15 @@ using UnityEngine.UI;
 
 public class Gamelogic : MonoBehaviour
 {
+    private void Awake()
+    {
+        var vcam = FindObjectOfType<CinemachineVirtualCamera>();
+        PlayerFactory playerFactory = FindObjectOfType<PlayerFactory>();
+        GameObject player = playerFactory.SpawnPlayer();
+        vcam.LookAt = player.transform;
+        vcam.Follow = player.transform;
+    }
+
     public  Text playerDiedText;
 
     private void OnEnable()
@@ -17,11 +27,6 @@ public class Gamelogic : MonoBehaviour
         PlayerHealth.playerDied -= HanldePlayerDied;
     }
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {

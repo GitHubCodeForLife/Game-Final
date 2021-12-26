@@ -9,7 +9,7 @@ public class PlayerFactory : MonoBehaviour
     public GameObject SpawnPlayer()
     {
         // Read type of player Form local Storage
-        int index = 0;
+        int index = 1;
         GameObject player =  Instantiate(players[index], startPosition.position, startPosition.rotation);
         return player;
     }
