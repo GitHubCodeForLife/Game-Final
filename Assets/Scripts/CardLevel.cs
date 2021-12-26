@@ -19,15 +19,16 @@ public class CardLevel : MonoBehaviour
             int index = (int)Random.Range(1, 4);
             if (i > 5) index = 0;
             Debug.Log(index);
-            GameObject level = Instantiate(listLevels[index], gridLayout.transform.position, gridLayout.transform.rotation);
+            GameObject level = Instantiate(listLevels[index], gridLayout.transform.position, Quaternion.identity);
+            //Debug.Log("Card Level : " + level.transform.localScale);
             if (index != 0)
             {
-                level.GetComponent<Button>().onClick.AddListener(()=>LoadLevel("Level"+index));
-                level.GetComponent<LevelState>().SetTextLevel("" + i);
+                level.GetComponent<Button>().onClick.AddListener(() => LoadLevel("Level" + index));
+                level.GetComponent<LevelState>().SetTextLevel((i+1)+ "");
             }
             level.transform.SetParent(gridLayout.transform);
-
         }
+      
     }
 
     // Update is called once per frame
