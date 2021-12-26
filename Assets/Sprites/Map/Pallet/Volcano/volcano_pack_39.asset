@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: volcano_pack_39
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 2b7b4f9a712234f4785e36797a7457de, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a1f43b5c4872bd547852e3320366089f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
