@@ -48,12 +48,12 @@ public class PlayerAttack : MonoBehaviour
             currentAttackTime = attackTime;
             Attack();
         }
-        if (Input.GetKeyDown(KeyCode.F) && currentFireTime <= 0)
+        if (Input.GetKeyDown(KeyCode.F) && currentFireTime <= 0 && gun!=null)
         {
             Shoot();
             currentFireTime = FireSpeedTime;
         }
-        if (Input.GetKeyDown(KeyCode.G) && currentGrenade <= 0)
+        if (Input.GetKeyDown(KeyCode.G) && currentGrenade <= 0 && grenadeType!=null)
         {
             ThrowGrenade();
             currentGrenade = grenadeTime;

@@ -12,5 +12,6 @@ public class CharacterShop {
     public string ability;
     public int price;
     public Sprite sr;
+    public STATE_ITEM state;
 }
 

@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 2025602839403107941}
   - component: {fileID: 2025602839403107936}
   - component: {fileID: 2285587196624277115}
+  - component: {fileID: 5690928612018527550}
   m_Layer: 3
   m_Name: Hero
   m_TagString: Player
@@ -277,3 +278,15 @@ MonoBehaviour:
   FireSpeedTime: 0.5
   grenadeTime: 1
   attackTime: 0.5
+--- !u!114 &5690928612018527550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025602839403107946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9a265592aebd984ab0645521565de5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

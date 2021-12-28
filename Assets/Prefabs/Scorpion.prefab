@@ -408,12 +408,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eda9945236f9054e8d0e4902c171358, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 8406999691214773278}
-  maxHealth: 100
+  maxHealth: 50
   currentHealth: 100
   healthBar: {fileID: 8406999690222545337}
   isDie: 0
-  damageEffect: {fileID: 5042599009313901737, guid: 9c7867545d99e8d44ab6d1d6801f5f07, type: 3}
   damagePoint: {fileID: 889600868}
 --- !u!50 &1026538786
 Rigidbody2D:

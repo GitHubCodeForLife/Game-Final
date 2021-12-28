@@ -8,9 +8,11 @@ public class PlayerAdvancedAttack : PlayerAttack
     {
         grenadeFactory = FindObjectOfType<GrenadeFactory>();
         gunFactory = FindObjectOfType<GunFactory>();
-        //Read information from Local Storage 
-        gun = gunFactory.CreateGun("ThreeGun");
-        grenadeType = "NormalGrenade";
+        ////Read information from Local Storage 
+        //gun = gunFactory.CreateGun("ThreeGun");
+        //grenadeType = "NormalGrenade";
+        gun = null;
+        grenadeType = null;
     }
     protected override void ThrowGrenade()
     {

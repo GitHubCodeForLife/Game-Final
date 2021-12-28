@@ -12,7 +12,7 @@ public class EnemyHealth : MonoBehaviour
     public bool isDie;
 
     public Transform damagePoint;
-    public SpawnEffect gameSpawn;
+
     private void Awake()
     {
         animator = gameObject.GetComponent<Animator>();
@@ -42,7 +42,7 @@ public class EnemyHealth : MonoBehaviour
     public void TakeNormalDamage(int damage)
     {
        ShowUIDamage(damage);
-        TakeDamage(damage);
+       TakeDamage(damage);
     }
     public void TakeCritDamage(int damage)
     {
@@ -57,21 +57,20 @@ public class EnemyHealth : MonoBehaviour
         //Show damge UI
         float index = Random.Range(1, 100);
         float range = (float)(index * 0.01);
-        gameSpawn.SpawnDamageEffect(transform.position + new Vector3(range, 0), transform.rotation, damage);
+        SpawnEffect.instance.SpawnDamageEffect(transform.position + new Vector3(range, 0), transform.rotation, damage);
     }
     private void ShowUICritDamage(int damage)
     {
         //Show damge UI
         float index = Random.Range(1, 100);
         float range = (float)(index * 0.01);
-        gameSpawn.SpawnDamageCritEffect(transform.position + new Vector3(range, 0), transform.rotation, damage);
+        SpawnEffect.instance.SpawnDamageCritEffect(transform.position + new Vector3(range, 0), transform.rotation, damage);
     }
 
 
     public void Die()
     {
-        if (gameSpawn != null)
-            gameSpawn.SpawnCoin(transform.position, transform.rotation);
+        SpawnEffect.instance.SpawnCoin(transform.position, transform.rotation);
         isDie = true;
         Destroy(gameObject, 0.25f);
     }

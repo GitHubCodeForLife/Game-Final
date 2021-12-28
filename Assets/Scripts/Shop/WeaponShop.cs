@@ -8,6 +8,6 @@ public class WeaponShop {
     public int price;
     public string ability ;
     public int damage;
-
+    public STATE_ITEM state;        
     public Sprite sr;
 }

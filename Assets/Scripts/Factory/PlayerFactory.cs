@@ -9,7 +9,8 @@ public class PlayerFactory : MonoBehaviour
     public GameObject SpawnPlayer()
     {
         // Read type of player Form local Storage
-        int index = 1;
+        //PlayerPrefs.SetInt("CurrentPlayer", currentPlayer);
+        int index = PlayerPrefs.GetInt("CurrentPlayer");
         GameObject player =  Instantiate(players[index], startPosition.position, startPosition.rotation);
         return player;
     }

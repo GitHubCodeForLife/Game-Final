@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3115897621765963844}
   - component: {fileID: 3901525176614028903}
   - component: {fileID: 3115897621765963899}
+  - component: {fileID: 5441841045626893383}
   m_Layer: 3
   m_Name: Soldier
   m_TagString: Player
@@ -179,13 +180,25 @@ MonoBehaviour:
   animator: {fileID: 3115897621765963844}
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   attackPoint: {fileID: 3115897622217548212}
   attackRange: 5
   attackDamage: 30
   FireSpeedTime: 0.5
   grenadeTime: 1
   attackTime: 0.5
+--- !u!114 &5441841045626893383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3115897621765963898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9a265592aebd984ab0645521565de5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3115897622217548213
 GameObject:
   m_ObjectHideFlags: 0

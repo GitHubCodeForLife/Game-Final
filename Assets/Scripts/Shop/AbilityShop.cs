@@ -8,5 +8,6 @@ public class AbilityShop
     public string name;
     public int price;
     public string ability;
+    public int quantity;
     public Sprite sr;
 }

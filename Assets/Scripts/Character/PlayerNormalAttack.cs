@@ -7,11 +7,13 @@ public class PlayerNormalAttack : PlayerAttack
 {
     protected override void InitialWeapon()
     {
+        //Read information from Local Storage 
         grenadeFactory = FindObjectOfType<GrenadeFactory>();
         gunFactory = FindObjectOfType<GunFactory>();
-        //Read information from Local Storage 
-        gun = gunFactory.CreateGun("ThreeGun");
-        grenadeType = "NormalGrenade";
+        // gun = gunFactory.CreateGun("ThreeGun");
+        // grenadeType = "NormalGrenade";
+        gun = null;
+        grenadeType = null;
     }
     protected override  void ThrowGrenade()
     {

@@ -8,6 +8,12 @@ public class SpawnEffect : MonoBehaviour
     public GameObject coinGameObject;
     public GameObject damageEffect;
     public GameObject damageCritEffect;
+    public static SpawnEffect instance { get; private set; }
+    private void Awake()
+    {
+        instance = this;
+    }
+
     public GameObject SpawnCoin(Vector2 pos, Quaternion qua)
     {
         return GameObject.Instantiate(coinGameObject, pos, qua);
