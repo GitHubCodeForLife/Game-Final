@@ -32,11 +32,17 @@ public class CharacterSelector : MonoBehaviour
             charactorShops[i].price = characters[i].price;
             charactorShops[i].name = characters[i].name;
             charactorShops[i].state = characters[i].state;
+            if(characters[i].state == STATE_ITEM.EQUIPPED)
+            {
+                Debug.Log("Chacracter SElector - Equipped " + characters[i].name);
+            }
         }
     }
 
     private void InitialItems()
     {
+        if (GameStorageManager.shopInfo.characters != null) return;
+        //Debug.Log("Character Selector : ");
         List<CharacterInfo> characters = new List<CharacterInfo>();
         foreach (CharacterShop characterShop in charactorShops)
         {
@@ -47,7 +53,7 @@ public class CharacterSelector : MonoBehaviour
             characterInfo.ability = characterShop.ability;
             characters.Add(characterInfo);
         }
-      
+
         GameStorageManager.shopInfo.characters = characters;
         GameStorageManager.SaveShopInfo();
     }

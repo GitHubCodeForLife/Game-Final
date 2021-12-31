@@ -59,4 +59,28 @@ public static class GameStorageManager {
         StorageHandler storageHandler = new StorageHandler();
         storageHandler.SaveData(shopInfo, "ShopInfo");
     }
+    public static string GetSelectedGrenade()
+    {
+        foreach(var grenade in shopInfo.grenades)
+        {
+            if (grenade.state == STATE_ITEM.EQUIPPED) return grenade.name;
+        }
+        return null;
+    }
+    public static string GetSelectedGun()
+    {
+        foreach (var gun in shopInfo.guns)
+        {
+            if (gun.state == STATE_ITEM.EQUIPPED) return gun.name;
+        }
+        return null;
+    }
+    public static string GetSelectedPlayer()
+    {
+        foreach (var character in shopInfo.characters)
+        {
+            if (character.state == STATE_ITEM.EQUIPPED) return character.name;
+        }
+        return null;
+    }
 }

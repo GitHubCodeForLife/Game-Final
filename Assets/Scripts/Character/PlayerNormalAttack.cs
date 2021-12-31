@@ -7,19 +7,18 @@ public class PlayerNormalAttack : PlayerAttack
 {
     protected override void InitialWeapon()
     {
-        //Read information from Local Storage 
         grenadeFactory = FindObjectOfType<GrenadeFactory>();
         gunFactory = FindObjectOfType<GunFactory>();
-        // gun = gunFactory.CreateGun("ThreeGun");
-        // grenadeType = "NormalGrenade";
-        gun = null;
-        grenadeType = null;
+
+        grenadeThrower = new GrenadeThrower();
+
+        grenadePrefabs = grenadeFactory.GetGrenade("Boom 01");
+
+        ////Read information from Local Storage 
+        gun = gunFactory.CreateGun("ThreeGun");
+        //gun = gunFactory.CreateGun("NormalGun");
     }
-    protected override  void ThrowGrenade()
-    {
-        int direction = transform.rotation.y == 0 ? 1 : -1;
-        grenadeFactory.SpawnGrenade(attackPoint.position, attackPoint.rotation, new Vector2(direction * 5, 5), grenadeType);
-    }
+
 
     protected override void Attack()
     {
@@ -47,4 +46,9 @@ public class PlayerNormalAttack : PlayerAttack
         gun.SpawnBullet(attackPoint.position, attackPoint.rotation, velocityBullet);
     }
 
+    protected override void ThrowGrenade()
+    {
+        int direction = transform.rotation.y == 0 ? 1 : -1;
+        grenadeThrower.ThrowGrenade(grenadePrefabs, attackPoint.position, attackPoint.rotation, new Vector2(direction * 5, 5));
+    }
 }

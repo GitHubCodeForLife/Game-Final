@@ -624,6 +624,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1ee7e73007f1124eb7a1b028a0f2cc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levels:
+  - name: Des
+    stars: 0
+    state: 0
+  - name: Level2
+    stars: 0
+    state: 0
   listLevels:
   - {fileID: 2920390867838056419, guid: 39184d259561e4c4695f5425d5ea8815, type: 3}
   - {fileID: 6326289071645447797, guid: 2a0a0697825d85e468084dc331b4f0f3, type: 3}

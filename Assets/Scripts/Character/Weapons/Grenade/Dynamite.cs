@@ -1,9 +1,8 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Grenade : MonoBehaviour, IGrenade
+public class Dynamite : MonoBehaviour
 {
     public int damage = 50;
     public float delay = 5f;
@@ -12,7 +11,6 @@ public class Grenade : MonoBehaviour, IGrenade
     public GameObject explosionEffect;
     public float radius = 5f;
     public LayerMask enemyLayers;
-
 
     public float force = 5f;
     // Start is called before the first frame update
@@ -32,12 +30,12 @@ public class Grenade : MonoBehaviour, IGrenade
         }
     }
 
-   public void Explore()
+    public void Explore()
     {
         Debug.Log("Boom");
         //Show Effect 
-        Instantiate(explosionEffect, transform.position, transform.rotation);
-
+        GameObject explosion = Instantiate(explosionEffect, transform.position, transform.rotation);
+        Destroy(explosion, 1);
         //Get nearby Object 
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, radius);
         // Add Force

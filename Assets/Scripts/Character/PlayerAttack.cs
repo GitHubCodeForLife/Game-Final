@@ -22,9 +22,12 @@ public class PlayerAttack : MonoBehaviour
     private float currentAttackTime;
 
     protected GrenadeFactory grenadeFactory;
+    protected GrenadeThrower grenadeThrower;
+    protected GameObject grenadePrefabs;
+
     protected GunFactory gunFactory;
     protected Gun gun;
-    protected string grenadeType;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -53,7 +56,7 @@ public class PlayerAttack : MonoBehaviour
             Shoot();
             currentFireTime = FireSpeedTime;
         }
-        if (Input.GetKeyDown(KeyCode.G) && currentGrenade <= 0 && grenadeType!=null)
+        if (Input.GetKeyDown(KeyCode.G) && currentGrenade <= 0 && grenadePrefabs != null)
         {
             ThrowGrenade();
             currentGrenade = grenadeTime;

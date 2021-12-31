@@ -21,8 +21,8 @@ public class WeaponSelector : MonoBehaviour
 
     private void Awake()
     {
-        InitialGuns();
-        InitialGrenades();
+       // InitialGuns();
+      //  InitialGrenades();
         ReadGuns();
         ReadGrenades();
         SelectGuns(0);

@@ -8,16 +8,15 @@ public class PlayerAdvancedAttack : PlayerAttack
     {
         grenadeFactory = FindObjectOfType<GrenadeFactory>();
         gunFactory = FindObjectOfType<GunFactory>();
+
+        grenadeThrower = new GrenadeThrower();
+
+        Debug.Log("Player Advance Attack - Grenade type " + GameStorageManager.GetSelectedGrenade());
+        grenadePrefabs = grenadeFactory.GetGrenade(GameStorageManager.GetSelectedGrenade());
+
         ////Read information from Local Storage 
-        //gun = gunFactory.CreateGun("ThreeGun");
-        //grenadeType = "NormalGrenade";
-        gun = null;
-        grenadeType = null;
-    }
-    protected override void ThrowGrenade()
-    {
-        int direction = transform.rotation.y == 0 ? 1 : -1;
-        grenadeFactory.SpawnGrenade(attackPoint.position, attackPoint.rotation, new Vector2(direction * 5, 5), grenadeType);
+        gun = gunFactory.CreateGun("ThreeGun");
+        //gun = gunFactory.CreateGun("NormalGun");
     }
 
     protected override void Attack()
@@ -46,6 +45,13 @@ public class PlayerAdvancedAttack : PlayerAttack
         animator.SetBool("Shoot", true);
         int direction = transform.rotation.y == 0 ? 1 : -1;
         Vector2 velocityBullet = new Vector2(direction * 10, 0);
-        gun.SpawnBullet(attackPoint.position, attackPoint.rotation, velocityBullet);
+        gun.SpawnBullet( attackPoint.position, attackPoint.rotation, velocityBullet);
     }
+    protected override void ThrowGrenade()
+    {
+        Debug.Log("Player Advanec Attack - Throw Grenade");
+        int direction = transform.rotation.y == 0 ? 1 : -1;
+        grenadeThrower.ThrowGrenade(grenadePrefabs, attackPoint.position, attackPoint.rotation, new Vector2(direction * 5, 5));
+    }
+
 }

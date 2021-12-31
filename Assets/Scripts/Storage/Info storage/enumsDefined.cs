@@ -10,8 +10,8 @@ public enum WEAPON_TYPE
 
 public enum STATE_ITEM
 {
-    EQUIPPED,
+    ON_SELL, EQUIPPED,
     BOUGHT,
-    ON_SELL
+    
 }
 
