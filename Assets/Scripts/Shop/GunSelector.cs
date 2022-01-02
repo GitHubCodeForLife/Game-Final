@@ -37,7 +37,7 @@ public class GunSelector : MonoBehaviour
 
     void InitialGuns()
     {
-        //if (GameStorageManager.shopInfo.guns != null) return;
+        if (GameStorageManager.shopInfo.guns != null) return;
         List<GunInfo> guns = new List<GunInfo>();
         foreach (GunShop gunShop in gunShops)
         {

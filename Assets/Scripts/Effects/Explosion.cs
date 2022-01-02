@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Explosion : MonoBehaviour
 {
+    public float destroyTime = 1f;
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(gameObject, 1f);
-
+        Destroy(gameObject, destroyTime);
     }
 
     // Update is called once per frame

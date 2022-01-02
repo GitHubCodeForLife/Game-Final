@@ -22,11 +22,14 @@ public class PlayerAttack : MonoBehaviour
     private float currentAttackTime;
 
     protected GrenadeFactory grenadeFactory;
-    protected GrenadeThrower grenadeThrower;
+    protected Thrower thrower;
     protected GameObject grenadePrefabs;
+    private int numberOfGrenade = 10;
 
-    protected GunFactory gunFactory;
+    protected BulletFactory bulletFactory;
     protected Gun gun;
+    protected GameObject bulletPrefab;
+    private int numberOfBullet = 20;
 
     // Start is called before the first frame update
     void Awake()
@@ -38,11 +41,22 @@ public class PlayerAttack : MonoBehaviour
         InitialWeapon();
     }
 
-    protected virtual void InitialWeapon()
+    private void InitialWeapon()
     {
-  
-    }
+        grenadeFactory = FindObjectOfType<GrenadeFactory>();
+        bulletFactory = FindObjectOfType<BulletFactory>();
 
+        thrower = new GrenadeThrower();
+        gun = new NormalGun();
+        // thrower =  gameObject.AddComponent<GrenadeThrower>();
+        //gun = gameObject.AddComponent<NormalGun>();
+
+        Debug.Log("Player Advance Attack - Grenade type " + GameStorageManager.GetSelectedGrenade());
+        Debug.Log("Player Advance Attack - Gun type " + GameStorageManager.GetSelectedGun());
+        grenadePrefabs = grenadeFactory.GetGrenade(GameStorageManager.GetSelectedGrenade());
+        bulletPrefab = bulletFactory.GetBullet(GameStorageManager.GetSelectedGun());
+        //bulletPrefab = bulletFactory.GetBullet("Water Gun");
+    }
     // Update is called once per frame
     void Update()
     {
@@ -51,7 +65,7 @@ public class PlayerAttack : MonoBehaviour
             currentAttackTime = attackTime;
             Attack();
         }
-        if (Input.GetKeyDown(KeyCode.F) && currentFireTime <= 0 && gun!=null)
+        if (Input.GetKeyDown(KeyCode.F) && currentFireTime <= 0 && bulletPrefab!=null)
         {
             Shoot();
             currentFireTime = FireSpeedTime;
@@ -77,5 +91,15 @@ public class PlayerAttack : MonoBehaviour
         if (attackPoint == null) return;
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+    }
+    public void ChangeGun(string item)
+    {
+        if (item == "S")
+            gun = new ThreeGun();
+    }
+    public void ChangeGrenadeThrower(string item)
+    {
+        if (item == "S")
+            gun = new ThreeGun();
     }
 }

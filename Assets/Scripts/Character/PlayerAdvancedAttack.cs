@@ -4,21 +4,6 @@ using UnityEngine;
 
 public class PlayerAdvancedAttack : PlayerAttack
 {
-    protected override void InitialWeapon()
-    {
-        grenadeFactory = FindObjectOfType<GrenadeFactory>();
-        gunFactory = FindObjectOfType<GunFactory>();
-
-        grenadeThrower = new GrenadeThrower();
-
-        Debug.Log("Player Advance Attack - Grenade type " + GameStorageManager.GetSelectedGrenade());
-        grenadePrefabs = grenadeFactory.GetGrenade(GameStorageManager.GetSelectedGrenade());
-
-        ////Read information from Local Storage 
-        gun = gunFactory.CreateGun("ThreeGun");
-        //gun = gunFactory.CreateGun("NormalGun");
-    }
-
     protected override void Attack()
     {
         //Play attack animaiton
@@ -45,13 +30,13 @@ public class PlayerAdvancedAttack : PlayerAttack
         animator.SetBool("Shoot", true);
         int direction = transform.rotation.y == 0 ? 1 : -1;
         Vector2 velocityBullet = new Vector2(direction * 10, 0);
-        gun.SpawnBullet( attackPoint.position, attackPoint.rotation, velocityBullet);
+        gun.SpawnBullet(bulletPrefab, attackPoint.position, attackPoint.rotation, velocityBullet);
     }
     protected override void ThrowGrenade()
     {
         Debug.Log("Player Advanec Attack - Throw Grenade");
         int direction = transform.rotation.y == 0 ? 1 : -1;
-        grenadeThrower.ThrowGrenade(grenadePrefabs, attackPoint.position, attackPoint.rotation, new Vector2(direction * 5, 5));
+        thrower.ThrowGrenade(grenadePrefabs, attackPoint.position, attackPoint.rotation, new Vector2(direction * 5, 5));
     }
 
 }

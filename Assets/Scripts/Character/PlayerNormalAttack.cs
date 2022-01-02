@@ -5,21 +5,6 @@ using UnityEngine;
 
 public class PlayerNormalAttack : PlayerAttack
 {
-    protected override void InitialWeapon()
-    {
-        grenadeFactory = FindObjectOfType<GrenadeFactory>();
-        gunFactory = FindObjectOfType<GunFactory>();
-
-        grenadeThrower = new GrenadeThrower();
-
-        grenadePrefabs = grenadeFactory.GetGrenade("Boom 01");
-
-        ////Read information from Local Storage 
-        gun = gunFactory.CreateGun("ThreeGun");
-        //gun = gunFactory.CreateGun("NormalGun");
-    }
-
-
     protected override void Attack()
     {
         //Play attack animaiton
@@ -37,18 +22,18 @@ public class PlayerNormalAttack : PlayerAttack
             enemy.GetComponent<EnemyHealth>().TakeCritDamage(attackDamage);
             Debug.Log("Player Attack Slice: " + enemy.name);
         }
-
     }
     protected override void Shoot()
     {
         int direction = transform.rotation.y == 0 ? 1 : -1;
         Vector2 velocityBullet = new Vector2(direction * 10, 0);
-        gun.SpawnBullet(attackPoint.position, attackPoint.rotation, velocityBullet);
+        gun.SpawnBullet(bulletPrefab, attackPoint.position, attackPoint.rotation, velocityBullet);
     }
 
     protected override void ThrowGrenade()
     {
         int direction = transform.rotation.y == 0 ? 1 : -1;
-        grenadeThrower.ThrowGrenade(grenadePrefabs, attackPoint.position, attackPoint.rotation, new Vector2(direction * 5, 5));
+        thrower.ThrowGrenade(grenadePrefabs, attackPoint.position, attackPoint.rotation, new Vector2(direction * 5, 5));
     }
+
 }

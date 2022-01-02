@@ -24,4 +24,12 @@ public class GunFactory : MonoBehaviour
         }
         return index;
     }
+
+    public GameObject GetBullet(string name)
+    {
+        int index = GetGunIndex(name);
+        //Gun gun = Instantiate(guns[index], transform.position, transform.rotation).GetComponent<Gun>();
+        return guns[index];
+    }
+
 }

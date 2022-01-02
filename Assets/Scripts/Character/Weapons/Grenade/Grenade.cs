@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Grenade : MonoBehaviour, IGrenade
+public class Grenade : MonoBehaviour
 {
     public int damage = 50;
     public float delay = 5f;
