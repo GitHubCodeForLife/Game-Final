@@ -33,7 +33,8 @@ public class CardLevel : MonoBehaviour
             GameObject level = Instantiate(listLevels[1], gridLayout.transform.position, Quaternion.identity);
             //Debug.Log("Card Level : " + level.transform.localScale);
             Debug.Log("Card Level - Log Level " + levels[i].name);
-            level.GetComponent<Button>().onClick.AddListener(() => LoadLevel("Level2"));
+            string game = levels[i].name;
+            level.GetComponent<Button>().onClick.AddListener(() => LoadLevel(game));
             level.GetComponent<LevelState>().SetTextLevel((i + 1) + "");
 
             level.transform.SetParent(gridLayout.transform);

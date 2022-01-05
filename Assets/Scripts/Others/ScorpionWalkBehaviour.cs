@@ -44,7 +44,7 @@ public class ScorpionWalkBehaviour : StateMachineBehaviour
         //else animator.transform.rotation = new Quaternion(0, 0, 0, 0);
         if (playerPos.position.x > animator.transform.position.x)
             animator.GetComponent<SpriteRenderer>().flipX = true;
-        else animator.GetComponent<SpriteRenderer>().flipX = false;
+        else animator.GetComponent<SpriteRenderer>().flipX =   false ;
     }
 
     private void CountDownTimer(Animator animator)
