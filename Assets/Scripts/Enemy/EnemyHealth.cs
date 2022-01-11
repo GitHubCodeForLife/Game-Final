@@ -70,38 +70,48 @@ public class EnemyHealth : MonoBehaviour
 
     public void Die()
     {
+        animator.SetTrigger("Death");
+
+        CapsuleCollider2D capsuleCollider2D = gameObject.GetComponent<CapsuleCollider2D>();
+        Rigidbody2D rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
+        if (capsuleCollider2D != null && rigidbody2D !=null)
+        {
+            rigidbody2D.gravityScale = 0f;
+            capsuleCollider2D.enabled = false;
+        }
         SpawnEffect.instance.SpawnCoin(transform.position, transform.rotation);
         isDie = true;
-        Destroy(gameObject, 0.25f);
+        Destroy(gameObject, 1f);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            Rigidbody2D rigidbody = collision.gameObject.GetComponent<Rigidbody2D>();
-            Debug.Log("Enemy Health 1: " + rigidbody.name);
-            if (rigidbody != null)
-            {
-                int direction = transform.rotation.y == 0 ? 1 : -1;
-                rigidbody.AddForce(new Vector2(5*direction, 5), ForceMode2D.Impulse);
-            }
-            collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(1);
-        }
-    }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            Rigidbody2D rigidbody = collision.gameObject.GetComponent<Rigidbody2D>();
-            Debug.Log("Enemy Health 2: " + rigidbody.name);
-            if (rigidbody != null)
-            {
-                int direction = transform.rotation.y == 0 ? 1 : -1;
-                rigidbody.AddForce(new Vector2(5 * direction, 5), ForceMode2D.Impulse);
-            }
-            collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(1);
-        }
-    }
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Player"))
+    //    {
+    //        Rigidbody2D rigidbody = collision.gameObject.GetComponent<Rigidbody2D>();
+    //        Debug.Log("Enemy Health 1: " + rigidbody.name);
+    //        if (rigidbody != null)
+    //        {
+    //            int direction = transform.rotation.y == 0 ? 1 : -1;
+    //            rigidbody.AddForce(new Vector2(5*direction, 5), ForceMode2D.Impulse);
+    //        }
+    //        collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(1);
+    //    }
+    //}
+
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Player"))
+    //    {
+    //        Rigidbody2D rigidbody = collision.gameObject.GetComponent<Rigidbody2D>();
+    //        Debug.Log("Enemy Health 2: " + rigidbody.name);
+    //        if (rigidbody != null)
+    //        {
+    //            int direction = transform.rotation.y == 0 ? 1 : -1;
+    //            rigidbody.AddForce(new Vector2(5 * direction, 5), ForceMode2D.Impulse);
+    //        }
+    //        collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(1);
+    //    }
+    //}
 }

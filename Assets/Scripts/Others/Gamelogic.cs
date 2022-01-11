@@ -15,7 +15,7 @@ public class Gamelogic : MonoBehaviour
         vcam.Follow = player.transform;
     }
 
-    public  Text playerDiedText;
+    public  GameObject playerDiedText;
 
     private void OnEnable()
     {

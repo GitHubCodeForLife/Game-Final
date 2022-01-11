@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerAdvancedAttack : PlayerAttack
 {
-    protected override void Attack()
+    public override void Attack()
     {
         //Play attack animaiton
         animator.SetBool("IsUsingGun", false);
@@ -28,7 +28,7 @@ public class PlayerAdvancedAttack : PlayerAttack
     {
         animator.SetBool("IsUsingGun", true);
         animator.SetBool("Shoot", true);
-        int direction = transform.rotation.y == 0 ? 1 : -1;
+        float direction = transform.localScale.x;
         Vector2 velocityBullet = new Vector2(direction * 10, 0);
         gun.SpawnBullet(bulletPrefab, attackPoint.position, attackPoint.rotation, velocityBullet);
     }

@@ -8,5 +8,7 @@ public class Gun : MonoBehaviour
     {
         GameObject bullet = Instantiate(bulletPrefab, pos, rotation);
         bullet.GetComponent<Rigidbody2D>().velocity = velocity;
+        float direction = velocity.x > 0 ? 1 : -1;
+        bullet.transform.localScale = new Vector3(direction,1,1);
     }
 }

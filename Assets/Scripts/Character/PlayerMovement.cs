@@ -42,11 +42,13 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(horizontal));
         if (horizontal > 0)
         {
-            transform.rotation = new Quaternion(0, 0, 0,0);
+            //transform.rotation = new Quaternion(0, 0, 0,0);
+            transform.localScale = new Vector3(1, 1, 1);
         }
         else if (horizontal < 0)
         {
-            transform.rotation = new Quaternion(0, 180, 0, 0);
+            transform.localScale = new Vector3(-1, 1, 1);
+            //transform.rotation = new Quaternion(0, 180, 0, 0);
         }
         else
         {

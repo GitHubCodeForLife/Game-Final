@@ -9,17 +9,23 @@ public class PlayerAttack : MonoBehaviour
     public LayerMask enemyLayers;
     public Transform attackPoint;
 
+
+    [Header("Attack Setting")]
     public float attackRange = 5;
     public int attackDamage = 30;
+    public float range = 0.5f;
+    public float attackTime = 0.5f;
+    private float currentAttackTime;
+    //public GameObject attackEffect;
 
+    [Header("Gun setting")]
     public float FireSpeedTime = 0.5f;
     private float currentFireTime;
 
+    [Header("Grenade Setting")]
     public float grenadeTime = 1f;
     private float currentGrenade;
 
-    public float attackTime = 0.5f;
-    private float currentAttackTime;
 
     protected GrenadeFactory grenadeFactory;
     protected Thrower thrower;
@@ -63,7 +69,8 @@ public class PlayerAttack : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && currentAttackTime <= 0)
         {
             currentAttackTime = attackTime;
-            Attack();
+            animator.SetTrigger("Attack");
+            //Attack();
         }
         if (Input.GetKeyDown(KeyCode.F) && currentFireTime <= 0 && bulletPrefab!=null)
         {
@@ -75,6 +82,11 @@ public class PlayerAttack : MonoBehaviour
             ThrowGrenade();
             currentGrenade = grenadeTime;
         }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            Debug.Log("Test Die");
+            animator.SetTrigger("Hurt");
+        }
         currentFireTime = currentFireTime - Time.deltaTime < 0 ? 0 : currentFireTime - Time.deltaTime;
         currentAttackTime = currentAttackTime - Time.deltaTime < 0 ? 0 : currentAttackTime - Time.deltaTime;
         currentGrenade = currentGrenade - Time.deltaTime < 0 ? 0 : currentGrenade - Time.deltaTime;
@@ -82,15 +94,18 @@ public class PlayerAttack : MonoBehaviour
 
     protected virtual void ThrowGrenade()
     {}
-    protected virtual void Attack()
-    {}
+    public virtual void Attack()
+    {
+    
+    }
     protected virtual void Shoot()
     {}
     private void OnDrawGizmosSelected()
     {
         if (attackPoint == null) return;
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+        Vector3 t = new Vector2(range*transform.localScale.x, 0);
+        Gizmos.DrawWireSphere(attackPoint.position + t, attackRange);
     }
     public void ChangeGun(string item)
     {

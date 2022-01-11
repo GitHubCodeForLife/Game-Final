@@ -120,7 +120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 70
   delay: 2
-  explosionEffect: {fileID: 5221231358566587090, guid: 2b291641be96bd04287a74f657b0a215, type: 3}
+  explosionEffect: {fileID: 100002, guid: 6ecf76dc4f268d340b2666896a954bcc, type: 3}
   radius: 5
   enemyLayers:
     serializedVersion: 2
