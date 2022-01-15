@@ -18,7 +18,7 @@ public class PlayerFactory : MonoBehaviour
     private GameObject GetSelectedPlayer(string name)
     {
         foreach (var player in players) {
-            if (player.name == name) return player;
+            if (player.name == "Warrior") return player;
         }
         return null;
     }
