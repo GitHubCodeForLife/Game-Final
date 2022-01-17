@@ -32267,7 +32267,6 @@ GameObject:
   - component: {fileID: 1239829036}
   - component: {fileID: 1239829038}
   - component: {fileID: 1239829037}
-  - component: {fileID: 1239829039}
   m_Layer: 0
   m_Name: bg
   m_TagString: Untagged
@@ -32947,32 +32946,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!114 &1239829039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1239829035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a0a056199054544ca329ba913562744, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxIdleTimer: 2
-  minIdleTimer: 1
-  maxMovingTimer: 3
-  minMovingTimer: 1
-  speed: 5
-  direction: 1
-  damage: 10
-  force: 2
-  range: 0
-  colliderDistance: 0
-  boxCollider: {fileID: 0}
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 8
 --- !u!1 &1291655112
 GameObject:
   m_ObjectHideFlags: 0
@@ -33109,11 +33082,11 @@ PrefabInstance:
       objectReference: {fileID: 2940007674910710738, guid: bb24c958d513d8543b4548c0c2b46ba5, type: 3}
     - target: {fileID: 1700673708199218146, guid: 5d7b66bad7b57154faf0c8a9978c7f19, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 289.93
+      value: 628
       objectReference: {fileID: 0}
     - target: {fileID: 1700673708199218146, guid: 5d7b66bad7b57154faf0c8a9978c7f19, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 75.1
+      value: 83.6
       objectReference: {fileID: 0}
     - target: {fileID: 1700673708412981324, guid: 5d7b66bad7b57154faf0c8a9978c7f19, type: 3}
       propertyPath: m_RootOrder
