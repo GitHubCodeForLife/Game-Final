@@ -11,6 +11,8 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log("Bullet : " + collision.gameObject.name);
+
         if (collision.gameObject.CompareTag("Player")) return;
         if (collision.gameObject.CompareTag("Effect")) return;
 
@@ -31,6 +33,7 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Bullet : " + collision.gameObject.name);
         if (collision.CompareTag("Player")) return;
         if (collision.CompareTag("Effect")) return;
 

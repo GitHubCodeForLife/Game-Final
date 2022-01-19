@@ -6,7 +6,8 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    int life = 3;
+    int maxLife = 100;
+    int life = 100;
     int coin = 100;
     private Animator animator;
 
@@ -17,8 +18,8 @@ public class PlayerHealth : MonoBehaviour
     private float currentDeathlesstTimer = 0;
     private void Awake()
     {
-        
-
+        //Take form local storage
+        //GameStorageManager.shopInfo.abilities
         currentDeathlesstTimer = 0;
         animator = GetComponent<Animator>();
     }
@@ -40,7 +41,7 @@ public class PlayerHealth : MonoBehaviour
 
         //Debug.Log(damage);
         //life--;
-        life = Mathf.Clamp(life - 1, 0, 3);
+        life = Mathf.Clamp(life - 1, 0, maxLife);
         animator.SetTrigger("Hurt");
         HUDPlayer.instance.SetLifeText(life);
         if (life<=0)

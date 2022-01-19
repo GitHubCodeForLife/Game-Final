@@ -3229,7 +3229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d62bf17abc1a4e489948cffec4f38b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 612656991}
 --- !u!95 &149464384
 Animator:
   serializedVersion: 3
@@ -3287,7 +3287,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1445414169
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4c83d1d3b96c8e94cb823e4779f86604, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3297,7 +3297,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1.07}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &149464386
@@ -3307,8 +3307,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 149464382}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.1600413, y: -0.5867084, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -11.1, y: -1.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1177873018}
@@ -3467,7 +3467,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1445414169
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7412e725e0bf9c64ea6b5821cfbec5d0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5570,16 +5570,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db55f806d539a8b4998f7bf412af21e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   enemyLayers:
     serializedVersion: 2
     m_Bits: 128
   attackPoint: {fileID: 1406566267}
-  bulletPrefab: {fileID: 6608004940868845668, guid: 65436f943b910074da61bbea09bb3e89, type: 3}
-  impactEffect: {fileID: 5221231358566587090, guid: 2b291641be96bd04287a74f657b0a215, type: 3}
   attackRange: 1
   attackDamage: 30
-  FireSpeedTime: 0.2
+  range: 0.5
   attackTime: 0.5
+  FireSpeedTime: 0.2
+  grenadeTime: 1
 --- !u!95 &453455706
 Animator:
   serializedVersion: 3
@@ -5612,9 +5613,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  attackPoint: {fileID: 1406566267}
+  animator: {fileID: 0}
+  rigidbody2d: {fileID: 0}
+  groundSensor: {fileID: 0}
+  dustEffect: {fileID: 0}
   jumpForce: 5
-  direction: 1
+  defaultJumpStep: 2
 --- !u!70 &453455708
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -5690,7 +5694,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1882399191
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b4373126c4f0acd4e998e816e1a39d53, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5924,7 +5928,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39d343835836ee9448b25257a6d4cfbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 612656991}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -6074,7 +6077,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1882399191
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b4373126c4f0acd4e998e816e1a39d53, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6152,9 +6155,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  attackPoint: {fileID: 27182739}
+  animator: {fileID: 0}
+  rigidbody2d: {fileID: 0}
+  groundSensor: {fileID: 0}
+  dustEffect: {fileID: 0}
   jumpForce: 5
-  direction: 1
+  defaultJumpStep: 2
 --- !u!95 &612656995
 Animator:
   serializedVersion: 3
@@ -6186,16 +6192,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db55f806d539a8b4998f7bf412af21e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   enemyLayers:
     serializedVersion: 2
     m_Bits: 128
   attackPoint: {fileID: 27182739}
-  bulletPrefab: {fileID: 6608004940868845668, guid: 65436f943b910074da61bbea09bb3e89, type: 3}
-  impactEffect: {fileID: 5221231358566587090, guid: 2b291641be96bd04287a74f657b0a215, type: 3}
   attackRange: 1
   attackDamage: 30
-  FireSpeedTime: 0.2
+  range: 0.5
   attackTime: 0.5
+  FireSpeedTime: 0.2
+  grenadeTime: 1
 --- !u!1 &622656225
 GameObject:
   m_ObjectHideFlags: 0
@@ -6526,7 +6533,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2114533939
-  m_SortingLayer: 2
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0.8207547, g: 0, b: 0, a: 1}
@@ -7410,7 +7417,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: RESUME
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -8350,7 +8357,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2114533939
-  m_SortingLayer: 2
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0.8207547, g: 0, b: 0, a: 1}
@@ -8839,7 +8846,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2114533939
-  m_SortingLayer: 2
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0.8207547, g: 0, b: 0, a: 1}
@@ -8923,7 +8930,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1445414169
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
