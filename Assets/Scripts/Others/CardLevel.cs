@@ -4,22 +4,41 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class CardLevel : MonoBehaviour
 {
-    public List<LevelInfo> levels;
+    public List<LevelInfo> levelsInput;
     public GameObject[] listLevels;
     public GridLayoutGroup gridLayout;
 
     private void Awake()
     {
-        //InitialLevels();
-        //ReadLevels();
+        InitialLevels();
+        ReadLevels();
+    }
+
+    private void ReadLevels()
+    {
+        levelsInput = GameStorageManager.gameInfo.levels;   
     }
 
     private void InitialLevels()
     {
-       // throw new System.NotImplementedException();
+       // if (GameStorageManager.gameInfo.levels != null) return;
+        List<LevelInfo> levelsInfor = new List<LevelInfo>();
+        foreach(LevelInfo level in levelsInput)
+        {
+            LevelInfo temp = new LevelInfo
+            {
+                name = level.name,
+                stars = level.stars,
+                state = level.state
+            };
+            levelsInfor.Add(temp);
+        }
+        GameStorageManager.gameInfo.levels = levelsInfor;
+        GameStorageManager.SaveGameInfo();       
     }
 
 
@@ -27,19 +46,42 @@ public class CardLevel : MonoBehaviour
     void Start()
     {
         //Read From Cache / File
-        for (int i = 0; i < levels.Count; i++)
+        for (int i = 0; i < levelsInput.Count; i++)
         {
-            //Debug.Log(index);
-            GameObject level = Instantiate(listLevels[1], gridLayout.transform.position, Quaternion.identity);
-            //Debug.Log("Card Level : " + level.transform.localScale);
-            Debug.Log("Card Level - Log Level " + levels[i].name);
-            string game = levels[i].name;
-            level.GetComponent<Button>().onClick.AddListener(() => LoadLevel(game));
-            level.GetComponent<LevelState>().SetTextLevel((i + 1) + "");
-
+            GameObject levelPrefab = GetLevelPrefabs(i);
+            GameObject level = Instantiate(levelPrefab, gridLayout.transform.position, Quaternion.identity);
+           
+            LevelState levelState =  level.GetComponent<LevelState>();
+            if (levelState != null)
+            {
+                string game = levelsInput[i].name;
+                level.GetComponent<Button>().onClick.AddListener(() => LoadLevel(game));
+                levelState.SetTextLevel(levelsInput[i].name);
+            }
             level.transform.SetParent(gridLayout.transform);
         }
 
+    }
+
+    private GameObject GetLevelPrefabs(int i)
+    {
+        Debug.Log("Card Level " + levelsInput[i].state);
+        GameObject levelPrefab;
+        if (levelsInput[i].state == LEVEL_STATE.PASSED)
+        {
+            int stars = levelsInput[i].stars;
+            levelPrefab = listLevels[stars];
+        }
+        else if (levelsInput[i].state == LEVEL_STATE.OPENING)
+        {
+            levelPrefab = listLevels[4];
+        }
+        else
+        {
+            levelPrefab = listLevels[0];
+        }
+       // Debug.Log("Card Level " + levelPrefab.name);
+        return levelPrefab;
     }
 
     // Update is called once per frame
@@ -53,4 +95,9 @@ public class CardLevel : MonoBehaviour
         SceneManager.LoadScene(level);
        // return null;
     }
+    public void Back()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+    
 }

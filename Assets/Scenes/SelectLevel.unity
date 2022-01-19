@@ -306,7 +306,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 152035862}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 309220402}
+        m_TargetAssemblyTypeName: CardLevel, Assembly-CSharp
+        m_MethodName: Back
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &152035862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -574,8 +586,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500.26282, y: 247.9876}
+  m_AnchoredPosition: {x: -0.000015258789, y: 0}
+  m_SizeDelta: {x: 991.7946, y: 607.387}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &309220400
 MonoBehaviour:
@@ -624,21 +636,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1ee7e73007f1124eb7a1b028a0f2cc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levels:
+  levelsInput:
   - name: Des
-    stars: 0
+    stars: 3
     state: 0
-  - name: Level2
-    stars: 0
+  - name: Jungle
+    stars: 2
+    state: 0
+  - name: Forrest
+    stars: 1
     state: 0
   - name: Jungle
     stars: 0
-    state: 0
+    state: 2
+  - name: Volcano
+    stars: 0
+    state: 2
+  - name: Farm
+    stars: 0
+    state: 2
   listLevels:
   - {fileID: 2920390867838056419, guid: 39184d259561e4c4695f5425d5ea8815, type: 3}
   - {fileID: 6326289071645447797, guid: 2a0a0697825d85e468084dc331b4f0f3, type: 3}
   - {fileID: 196030875350845974, guid: 5b41d3147b236a34d8f2c20fe18312f6, type: 3}
   - {fileID: 8353010395108064333, guid: 74eb1e6bd71a5fc42a043b96e07596bd, type: 3}
+  - {fileID: 8177734327728934098, guid: 7ffd5e4ca240b914b865cb681590704e, type: 3}
   gridLayout: {fileID: 504320750}
 --- !u!1 &504320748
 GameObject:
@@ -673,8 +695,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.9052, y: 6.2599}
-  m_SizeDelta: {x: 385.45, y: 164.9952}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 875.7237, y: 512.86487}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &504320750
 MonoBehaviour:

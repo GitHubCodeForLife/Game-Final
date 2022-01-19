@@ -11,6 +11,7 @@ public class PlayerFactory : MonoBehaviour
         // Read type of player Form local Storage
         //PlayerPrefs.SetInt("CurrentPlayer", currentPlayer);
         string name = GameStorageManager.GetSelectedPlayer();
+        Debug.Log("Player Factory - Current Player " + name);
         GameObject playerPrefab = GetSelectedPlayer(name);
         GameObject player =  Instantiate(playerPrefab, startPosition.position, startPosition.rotation);
         return player;
@@ -18,7 +19,7 @@ public class PlayerFactory : MonoBehaviour
     private GameObject GetSelectedPlayer(string name)
     {
         foreach (var player in players) {
-            if (player.name == "Warrior") return player;
+            if (player.name == name) return player;
         }
         return null;
     }

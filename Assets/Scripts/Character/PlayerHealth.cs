@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    int life = 10;
+    int life = 3;
     int coin = 100;
     private Animator animator;
 
@@ -39,7 +39,8 @@ public class PlayerHealth : MonoBehaviour
         currentDeathlesstTimer = deathlessTimer;
 
         //Debug.Log(damage);
-        life--;
+        //life--;
+        life = Mathf.Clamp(life - 1, 0, 3);
         animator.SetTrigger("Hurt");
         HUDPlayer.instance.SetLifeText(life);
         if (life<=0)
@@ -49,8 +50,11 @@ public class PlayerHealth : MonoBehaviour
     private void Died()
     {
         animator.SetBool("IsDie", true);
-        //if (playerDied != null)
-          //  playerDied();
-       // Destroy(gameObject, 2f);    
+        if (playerDied != null)
+        {
+            playerDied();
+            Time.timeScale = 0f;
+        }
+        Destroy(gameObject, 2f);    
     }
 }
