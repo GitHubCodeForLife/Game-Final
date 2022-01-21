@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    int maxLife = 100;
-    int life = 100;
+    int maxLife = 10;
+    int life = 10;
     int coin = 100;
     private Animator animator;
 
@@ -22,6 +22,9 @@ public class PlayerHealth : MonoBehaviour
         //GameStorageManager.shopInfo.abilities
         currentDeathlesstTimer = 0;
         animator = GetComponent<Animator>();
+    }
+    private void Start()
+    {
     }
     private void Update()
     {

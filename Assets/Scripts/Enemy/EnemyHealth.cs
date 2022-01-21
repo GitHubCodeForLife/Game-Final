@@ -81,7 +81,7 @@ public class EnemyHealth : MonoBehaviour
         }
         SpawnEffect.instance.SpawnCoin(transform.position, transform.rotation);
         isDie = true;
-        Destroy(gameObject, 1f);
+        Destroy(gameObject, 2f);
     }
 
 
