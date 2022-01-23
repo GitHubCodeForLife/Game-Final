@@ -444,7 +444,7 @@ Transform:
   m_GameObject: {fileID: 7778249911218847741}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.81, y: -0.18, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 7778249910926953792}
   - {fileID: 7778249911581736288}
@@ -595,6 +595,7 @@ MonoBehaviour:
   speed: 3
   direction: 1
   damage: 10
+  force: 2
   range: 10
   colliderDistance: 0.4
   boxCollider: {fileID: 7778249911581736291}

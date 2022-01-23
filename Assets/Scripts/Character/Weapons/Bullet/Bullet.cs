@@ -16,7 +16,7 @@ public class Bullet : MonoBehaviour
         if (collision.gameObject.CompareTag("Player")) return;
         if (collision.gameObject.CompareTag("Effect")) return;
 
-        Instantiate(impactEffect, transform.position, transform.rotation);
+        Instantiate(impactEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
         if (collision.gameObject.CompareTag("Enemies"))
         {
@@ -36,8 +36,14 @@ public class Bullet : MonoBehaviour
         Debug.Log("Bullet : " + collision.gameObject.name);
         if (collision.CompareTag("Player")) return;
         if (collision.CompareTag("Effect")) return;
+        Vector2 pos = transform.position;
+        Quaternion quaternion = transform.rotation;
 
-        Instantiate(impactEffect, transform.position, transform.rotation);
+        quaternion.y = transform.localScale.x == 1 ? 0 : 180;
+       
+        GameObject impactObject =  Instantiate(impactEffect, pos,quaternion);
+        
+        
         Destroy(gameObject);
         if (collision.CompareTag("Enemies"))
         {

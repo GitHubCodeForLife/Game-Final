@@ -10,13 +10,13 @@ public class IdleEnemy : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         enemy = animator.GetComponent<Enemy>();
-        enemy.direction *= -1;
         timer = Random.Range(enemy.minIdleTimer, enemy.maxIdleTimer);
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        if (enemy.IsFreeze() == true) return;
         if (timer <= 0)
             animator.SetTrigger("Moving");
         else

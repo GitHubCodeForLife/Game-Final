@@ -158,7 +158,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6272961837291334063}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.75, y: 0.0116119385, z: 0}
+  m_LocalPosition: {x: 0.03, y: 0.04, z: 0}
   m_LocalScale: {x: -0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 6272961837517698984}
@@ -270,7 +270,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 283499142206199488, guid: 6f7642ce7abd491489607d7ffe5c09e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 2.4, y: 2.4}
@@ -311,7 +311,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.45463973, y: -0.8334955}
+  m_Offset: {x: -0.34, y: -0.8334955}
   m_Size: {x: 1.6423044, y: 0.7330162}
   m_Direction: 1
 --- !u!50 &6272961837517698964
@@ -352,11 +352,10 @@ MonoBehaviour:
   maxMovingTimer: 5
   minMovingTimer: 1
   speed: 2
-  direction: 1
   damage: 10
   force: 2
-  range: 1
-  colliderDistance: -1.14
+  range: 1.05
+  colliderDistance: 0.83
   boxCollider: {fileID: 6272961837291334049}
   playerLayer:
     serializedVersion: 2
@@ -564,7 +563,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.38, y: -0.21}
+  m_AnchoredPosition: {x: -0.1, y: -0.21}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &6272961838177007938

@@ -25,6 +25,6 @@ public class BulletFactory : MonoBehaviour
             if (gun.name.Equals(name)) return index;
             index++;
         }
-        return index;
+        return 0;
     }
 }

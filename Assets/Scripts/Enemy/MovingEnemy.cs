@@ -11,7 +11,7 @@ public class MovingEnemy : StateMachineBehaviour
     {
         enemy = animator.GetComponent<Enemy>();
         timer = Random.Range(enemy.minIdleTimer, enemy.maxIdleTimer);
-        if (enemy.direction == 1)
+        if (enemy.transform.localScale.x == -1)
             animator.transform.localScale = new Vector3(1, 1, 1);
         else animator.transform.localScale = new Vector3(-1, 1, 1);
     }
@@ -19,19 +19,23 @@ public class MovingEnemy : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        if (enemy.IsFreeze() == true) return;
         if (timer <= 0)
             animator.SetTrigger("Idle");
         else
             timer -= Time.deltaTime;
-        if(enemy.PlayerInSight())
-            animator.SetTrigger("Attack");
+        if (enemy.PlayerInSight())
+        {
+            Debug.Log("Enemy Attack Player");
+            animator.SetTrigger("Attack"); return;
+        }
         MoveEnemy();
     }
 
     private void MoveEnemy()
     {
         Vector2 pos = enemy.transform.position;
-        pos.x += enemy.speed * Time.deltaTime * enemy.direction;
+        pos.x += enemy.speed * Time.deltaTime * enemy.transform.localScale.x;
         enemy.transform.position = pos;
     }
 

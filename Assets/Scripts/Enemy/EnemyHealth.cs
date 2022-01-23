@@ -9,7 +9,7 @@ public class EnemyHealth : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     public Slider healthBar;
-    public bool isDie;
+    public bool isDie= false;
 
     public Transform damagePoint;
 
@@ -17,6 +17,13 @@ public class EnemyHealth : MonoBehaviour
     {
         animator = gameObject.GetComponent<Animator>();
     }
+   
+
+    internal void TakeCritDamage(object p)
+    {
+        throw new System.NotImplementedException();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,8 +42,11 @@ public class EnemyHealth : MonoBehaviour
         currentHealth -= damage;
         if (healthBar != null)
             healthBar.value = (currentHealth * 100 / maxHealth);
-        if (currentHealth <= 0)
+        if (currentHealth <= 0 && isDie == false)
+        {
+            isDie = true;
             Die();
+        }
     }
 
     public void TakeNormalDamage(int damage)
@@ -57,14 +67,16 @@ public class EnemyHealth : MonoBehaviour
         //Show damge UI
         float index = Random.Range(1, 100);
         float range = (float)(index * 0.01);
-        SpawnEffect.instance.SpawnDamageEffect(transform.position + new Vector3(range, 0), transform.rotation, damage);
+        if (damagePoint != null)
+            SpawnEffect.instance.SpawnDamageEffect(damagePoint.position + new Vector3(range, 0), Quaternion.identity, damage);
     }
     private void ShowUICritDamage(int damage)
     {
         //Show damge UI
         float index = Random.Range(1, 100);
         float range = (float)(index * 0.01);
-        SpawnEffect.instance.SpawnDamageCritEffect(transform.position + new Vector3(range, 0), transform.rotation, damage);
+        if (damagePoint != null)
+            SpawnEffect.instance.SpawnDamageCritEffect(damagePoint.position + new Vector3(range, 0), Quaternion.identity, damage);
     }
 
 
@@ -79,9 +91,12 @@ public class EnemyHealth : MonoBehaviour
             rigidbody2D.gravityScale = 0f;
             capsuleCollider2D.enabled = false;
         }
-        SpawnEffect.instance.SpawnCoin(transform.position, transform.rotation);
+        SpawnEffect.instance.SpawnItem(transform.position);
         isDie = true;
         Destroy(gameObject, 2f);
+        Gamelogic gamelogic = FindObjectOfType<Gamelogic>();
+        if (gamelogic != null)
+            gamelogic.KillNewEnemy(gameObject);
     }
 
 

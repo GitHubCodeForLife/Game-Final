@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1346427098
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1346427099}
+  m_Layer: 7
+  m_Name: Health
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1346427099
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346427098}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.08, y: 3.01, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1724090017047300523}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1724090015578874246
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,6 +505,7 @@ Transform:
   m_Children:
   - {fileID: 1724090016612173553}
   - {fileID: 1724090015578874240}
+  - {fileID: 1346427099}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -601,7 +632,7 @@ MonoBehaviour:
   currentHealth: 0
   healthBar: {fileID: 1724090016022695775}
   isDie: 0
-  damagePoint: {fileID: 1724090015578874240}
+  damagePoint: {fileID: 1346427099}
 --- !u!114 &1724090017047300439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -619,7 +650,6 @@ MonoBehaviour:
   maxMovingTimer: 3
   minMovingTimer: 1
   speed: 6
-  direction: 1
   damage: 10
   force: 2
   range: 0.9

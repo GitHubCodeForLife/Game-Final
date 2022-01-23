@@ -120,7 +120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 60
   delay: 2
-  explosionEffect: {fileID: 5221231358566587090, guid: 2b291641be96bd04287a74f657b0a215, type: 3}
+  explosionEffect: {fileID: 100006, guid: 93485fd5fc2ccf2439cb3239186f6382, type: 3}
   radius: 5
   enemyLayers:
     serializedVersion: 2
@@ -143,7 +143,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.64, y: 0.64}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SeaMine : MonoBehaviour
 {
-    public int damage = 50;
+    public int damage = 100;
     public GameObject explosionEffect;
     public float radius = 5f;
     public LayerMask enemyLayers;
@@ -15,7 +15,6 @@ public class SeaMine : MonoBehaviour
         if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Enemies"))
             Explore();
     }
-
     public void Explore()
     {
         //Show Effect 
@@ -38,7 +37,7 @@ public class SeaMine : MonoBehaviour
             EnemyHealth enemyHealth = nearbyObject.GetComponent<EnemyHealth>();
             if (enemyHealth != null)
             {
-                enemyHealth.TakeNormalDamage(damage);
+                enemyHealth.TakeCritDamage(damage);
             }
         }
         // Damage 

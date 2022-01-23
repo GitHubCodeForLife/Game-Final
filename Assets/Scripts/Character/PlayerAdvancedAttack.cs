@@ -4,23 +4,27 @@ using UnityEngine;
 
 public class PlayerAdvancedAttack : PlayerAttack
 {
-    public override void Attack()
+    protected override void SetAnimAttack()
     {
-        //Play attack animaiton
+        Debug.Log("Player Advanced Attack");
         animator.SetBool("IsUsingGun", false);
         animator.SetTrigger("Slash");
+    }
+    public override void Attack()
+    {
         //Detect enemies in range of attack 
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-        // Debug.Log(hitEnemies.Length);
-        if (hitEnemies.Length >= 1)
-        {
-            // Instantiate(impactEffect, attackPoint.position, attackPoint.rotation);
-        }
+     
         //Damage them
         foreach (Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<EnemyHealth>().TakeCritDamage(attackDamage);
-            Debug.Log("Player Attack Slice: " + enemy.name);
+            EnemyHealth enemyHealth = enemy.GetComponent<EnemyHealth>();
+            if (enemyHealth != null)
+                enemyHealth.TakeCritDamage(attackDamage);
+    
+            Chest chest = enemy.GetComponent<Chest>();
+            if (chest != null)
+                chest.OpenChest();
         }
 
     }

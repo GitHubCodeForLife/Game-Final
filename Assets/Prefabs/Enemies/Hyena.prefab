@@ -157,16 +157,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a0a056199054544ca329ba913562744, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxIdleTimer: 0.1
-  minIdleTimer: 0.05
+  maxIdleTimer: 3
+  minIdleTimer: 1
   maxMovingTimer: 3
   minMovingTimer: 1
   speed: 5
-  direction: 1
   damage: 10
   force: 2
-  range: 1
-  colliderDistance: 0.9
+  range: 0.81
+  colliderDistance: 1.06
   boxCollider: {fileID: 3505949378829650198}
   playerLayer:
     serializedVersion: 2

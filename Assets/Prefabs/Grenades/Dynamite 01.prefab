@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4221026642740916709}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.92, y: 4.29, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -134,10 +134,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ff4089b8c8a94047962c889558028e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 100
+  damage: 70
   delay: 2
-  explosionEffect: {fileID: 5221231358566587090, guid: 2b291641be96bd04287a74f657b0a215, type: 3}
-  radius: 5
+  explosionEffect: {fileID: 100008, guid: 7075bd5fe1480184695a32611c15da57, type: 3}
+  radius: 2
   enemyLayers:
     serializedVersion: 2
     m_Bits: 128

@@ -119,9 +119,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c21f01d56db615a499018c6263aa3023, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 5
   impactEffect: {fileID: 100008, guid: 7075bd5fe1480184695a32611c15da57, type: 3}
-  damage: 20
+  damage: 30
 --- !u!60 &3983711526578295477
 PolygonCollider2D:
   m_ObjectHideFlags: 0

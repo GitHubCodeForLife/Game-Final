@@ -10,6 +10,7 @@ public class GunFactory : MonoBehaviour
     {
         int index = GetGunIndex(name);
         Gun gun = Instantiate(guns[index], transform.position, transform.rotation).GetComponent<Gun>();
+        Debug.Log("Gun index: "+ index);
         return gun;
     }
 

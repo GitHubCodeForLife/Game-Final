@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 8793854167628081840}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.8753, y: 0.19544446, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 8793854168581748360}
   - {fileID: 8793854168692921694}
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eda9945236f9054e8d0e4902c171358, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 200
   currentHealth: 0
   healthBar: {fileID: 8793854168269535408}
   isDie: 0
@@ -174,15 +174,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a0a056199054544ca329ba913562744, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxIdleTimer: 3
-  minIdleTimer: 0.5
+  maxIdleTimer: 2
+  minIdleTimer: 1
   maxMovingTimer: 5
   minMovingTimer: 1
   speed: 3
   direction: 1
   damage: 10
   force: 5
-  range: 1.5
+  range: 1.6
   colliderDistance: 0.48
   boxCollider: {fileID: 8793854168692921695}
   playerLayer:

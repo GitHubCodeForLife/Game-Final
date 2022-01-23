@@ -4,24 +4,26 @@ using UnityEngine;
 
 public class BatmanIdleBehaviour : StateMachineBehaviour
 {
-    public float timer;
-    public float maxTimer;
-    public float minTimer;
+    private float timer;
+    private Enemy enemy;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        timer = Random.Range(minTimer, maxTimer);
+        enemy = animator.GetComponent<Enemy>();
+      
+        timer = Random.Range(enemy.minIdleTimer, enemy.maxIdleTimer);
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         if (timer <= 0)
-            animator.SetTrigger("Attack");
+            animator.SetTrigger("Moving");
         else
             timer -= Time.deltaTime;
+        if (enemy.PlayerInSight())
+            animator.SetTrigger("Attack");
     }
-
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     //override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     //{

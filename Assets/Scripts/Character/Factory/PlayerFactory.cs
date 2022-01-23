@@ -5,15 +5,15 @@ using UnityEngine;
 public class PlayerFactory : MonoBehaviour
 {
     public List<GameObject> players;
-    public Transform startPosition;
-    public GameObject SpawnPlayer()
+  
+    public GameObject SpawnPlayer(Vector2 pos)
     {
         // Read type of player Form local Storage
         //PlayerPrefs.SetInt("CurrentPlayer", currentPlayer);
         string name = GameStorageManager.GetSelectedPlayer();
         Debug.Log("Player Factory - Current Player " + name);
         GameObject playerPrefab = GetSelectedPlayer(name);
-        GameObject player =  Instantiate(playerPrefab, startPosition.position, startPosition.rotation);
+        GameObject player =  Instantiate(playerPrefab, pos, Quaternion.identity);
         return player;
     }
     private GameObject GetSelectedPlayer(string name)

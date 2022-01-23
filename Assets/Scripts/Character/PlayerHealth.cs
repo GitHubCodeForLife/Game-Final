@@ -6,32 +6,72 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
+    //Shield 
+  
+    public GameObject shieldObject;
+
+    private const float WaitTime = 2.0f;
     int maxLife = 10;
-    int life = 10;
+    int life = 3;
     int coin = 100;
     private Animator animator;
 
     public delegate void PlayerDied();
+
+    internal void ChangeHealth(int v)
+    {
+        if (this.life <= 4)
+            this.life += v;
+        HUDPlayer.instance.SetLifeText(life);
+    }
+
     public static event PlayerDied playerDied;
 
     public float deathlessTimer = 2f;
-    private float currentDeathlesstTimer = 0;
+    private float currentDeathlessTimer = 0;
+
+    private bool IsDie = false;
+
     private void Awake()
     {
         //Take form local storage
         //GameStorageManager.shopInfo.abilities
-        currentDeathlesstTimer = 0;
+        IsDie = false;
         animator = GetComponent<Animator>();
     }
     private void Start()
     {
+        currentDeathlessTimer = deathlessTimer;
     }
     private void Update()
     {
-        currentDeathlesstTimer = currentDeathlesstTimer < 0 ? currentDeathlesstTimer : currentDeathlesstTimer - Time.deltaTime;
+        if (currentDeathlessTimer > 0 && IsDie==false)
+        {
+            TurnOnShield();
+        }else
+        {
+            TurnOffShield();
+        }
+        currentDeathlessTimer = currentDeathlessTimer < 0 ? currentDeathlessTimer : currentDeathlessTimer - Time.deltaTime;
         HUDPlayer.instance.SetCoinText(coin);
         HUDPlayer.instance.SetLifeText(life);
     }
+
+    private void TurnOffShield()
+    {
+        if (shieldObject != null)
+            shieldObject.SetActive(false);
+    }
+
+    private void TurnOnShield()
+    {
+        if (shieldObject != null)
+        {
+            Debug.Log("Turn on Shield");
+            shieldObject.SetActive(true);
+        }
+    }
+
     public void ChangeCoin(int amount)
     {
         coin += amount;
@@ -39,26 +79,49 @@ public class PlayerHealth : MonoBehaviour
     }
     public void TakeDamage(int damage)
     {
-        if (currentDeathlesstTimer > 0) return;
-        currentDeathlesstTimer = deathlessTimer;
+        if (currentDeathlessTimer > 0) return;
+        currentDeathlessTimer = deathlessTimer;
 
-        //Debug.Log(damage);
+        Debug.Log(damage);
         //life--;
         life = Mathf.Clamp(life - 1, 0, maxLife);
         animator.SetTrigger("Hurt");
         HUDPlayer.instance.SetLifeText(life);
         if (life<=0)
             Died();
+      
+    }
+
+    // every 2 seconds perform the print()
+    private IEnumerator WaitPlayerDie(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        if (playerDied != null)
+        {
+
+            //  Debug.Log("Player Died");
+            playerDied();
+        }
+        Time.timeScale = 1f;
+        // Debug.Log("Player Died Event");
+        Destroy(gameObject);
     }
 
     private void Died()
     {
+        // TurnOffShield();
+        IsDie = true;
+        DestroyAbilities();
+        Time.timeScale = 0.25f;
+        StartCoroutine(WaitPlayerDie(WaitTime));
         animator.SetBool("IsDie", true);
-        if (playerDied != null)
-        {
-            playerDied();
-            Time.timeScale = 0f;
-        }
-        Destroy(gameObject, 2f);    
+    }
+
+    private void DestroyAbilities()
+    {
+        PlayerAttack playerAttack = GetComponent<PlayerAttack>();
+        PlayerMovement playerMovement = GetComponent<PlayerMovement>();
+        if (playerAttack != null) playerAttack.enabled = false;
+        if (playerMovement != null) playerMovement.enabled = false;
     }
 }

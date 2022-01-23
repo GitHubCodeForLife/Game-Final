@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 968427123747837814}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.41, y: 1.05, z: 0}
+  m_LocalPosition: {x: 0.41, y: 0.99, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 968427124985483501}
@@ -93,7 +93,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.45999908, y: 0.9649999}
+  m_AnchoredPosition: {x: 0.46, y: 1.12}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &968427124438154084
@@ -337,7 +337,6 @@ MonoBehaviour:
   maxMovingTimer: 3
   minMovingTimer: 1
   speed: 5
-  direction: 1
   damage: 10
   force: 2
   range: 10
@@ -347,7 +346,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   gamePrefabs: {fileID: 2940007674910710738, guid: bb24c958d513d8543b4548c0c2b46ba5, type: 3}
-  attackPoint: {fileID: 968427125621644948}
+  attackPoint: {fileID: 4976897307515558857, guid: 872f027ed1351ea438a974c82f9e1eb4, type: 3}
   arrowSpeed: 10
 --- !u!1 &968427124988557575
 GameObject:

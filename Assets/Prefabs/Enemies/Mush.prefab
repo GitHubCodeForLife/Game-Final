@@ -217,7 +217,6 @@ MonoBehaviour:
   maxMovingTimer: 5
   minMovingTimer: 1
   speed: 3
-  direction: 1
   damage: 5
   force: 1
   range: 1

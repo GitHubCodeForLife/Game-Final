@@ -432,11 +432,10 @@ MonoBehaviour:
   maxMovingTimer: 5
   minMovingTimer: 1
   speed: 3
-  direction: 1
   damage: 10
   force: 2
-  range: 2
-  colliderDistance: 0.6
+  range: 5.52
+  colliderDistance: 0
   boxCollider: {fileID: 1818470107866724942}
   playerLayer:
     serializedVersion: 2
@@ -453,7 +452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eda9945236f9054e8d0e4902c171358, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 9000
+  maxHealth: 300
   currentHealth: 0
   healthBar: {fileID: 1818470109128499894}
   isDie: 0

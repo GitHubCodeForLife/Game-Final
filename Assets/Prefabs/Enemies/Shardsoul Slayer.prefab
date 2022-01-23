@@ -387,8 +387,8 @@ MonoBehaviour:
   maxMovingTimer: 3
   minMovingTimer: 1
   speed: 10
-  direction: 1
   damage: 10
+  force: 2
   range: 2
   colliderDistance: 0.5
   boxCollider: {fileID: 5046871985368832825}

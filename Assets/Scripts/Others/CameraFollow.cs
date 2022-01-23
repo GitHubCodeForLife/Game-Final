@@ -8,8 +8,8 @@ public class CameraFollow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerFactory playerFactory = FindObjectOfType<PlayerFactory>();
-        target = playerFactory.SpawnPlayer().transform;
+        //PlayerFactory playerFactory = FindObjectOfType<PlayerFactory>();
+        //target = playerFactory.SpawnPlayer().transform;
     }
 
     // Update is called once per frame

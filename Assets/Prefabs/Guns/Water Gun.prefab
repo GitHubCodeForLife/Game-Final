@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8012486072660365813}
   - component: {fileID: 8012486072660365809}
   - component: {fileID: 8012486072660365808}
-  - component: {fileID: 8012486072660365811}
   - component: {fileID: 4813178662572138162}
   - component: {fileID: 173613393959810362}
+  - component: {fileID: 559801088}
   m_Layer: 0
   m_Name: Water Gun
   m_TagString: Effect
@@ -107,21 +107,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &8012486072660365811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8012486072660365812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c21f01d56db615a499018c6263aa3023, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  impactEffect: {fileID: 8480326617178583705, guid: a12f257072a9b1b4a85c822ee85a1b85, type: 3}
-  damage: 20
 --- !u!95 &4813178662572138162
 Animator:
   serializedVersion: 3
@@ -157,3 +142,18 @@ CircleCollider2D:
   m_Offset: {x: 0.10387817, y: -0.018886954}
   serializedVersion: 2
   m_Radius: 0.1972349
+--- !u!114 &559801088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8012486072660365812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b984319f2ffdc74bb38206458a5d6b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
+  impactEffect: {fileID: 8480326617178583705, guid: a12f257072a9b1b4a85c822ee85a1b85, type: 3}
+  damage: 20

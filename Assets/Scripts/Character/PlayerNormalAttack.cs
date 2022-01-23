@@ -16,6 +16,9 @@ public class PlayerNormalAttack : PlayerAttack
             EnemyHealth enemyHealth = enemy.GetComponent<EnemyHealth>();
             if (enemyHealth != null)
                 enemyHealth.TakeCritDamage(attackDamage);
+            Chest chest = enemy.GetComponent<Chest>();
+            if (chest != null)
+                chest.OpenChest();
         }
     }
     protected override void Shoot()
