@@ -1,13 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD:Assets/Sprites/Characters/Samurai02/01-Idle/01-Normal/2D_SM02_Idle_000.png.meta
 guid: 02e9dbd62fab8dc42bf6d8eae66d8a91
-=======
-guid: ef1448c1be286e541b29f347fb71d4a2
->>>>>>> 53a4493c983980d0a1e30c7ebad2d99d26dad264:Assets/Sprites/Characters/Samurai02/01-Idle/01-Normal/2D_SM02_Idle_001.png.meta
-=======
-guid: 02e9dbd62fab8dc42bf6d8eae66d8a91
->>>>>>> 53a4493c983980d0a1e30c7ebad2d99d26dad264
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

@@ -4,21 +4,22 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform target;
+    private Transform target;
     // Start is called before the first frame update
     void Start()
     {
-        
+        //PlayerFactory playerFactory = FindObjectOfType<PlayerFactory>();
+        //target = playerFactory.SpawnPlayer().transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-       // Debug.Log(target.position);
+        // Debug.Log(target.position);
         if (target == null) return;
         Vector3 pos = transform.position;
         pos.x = target.position.x;
-       pos.y = target.position.y-2;
+        pos.y = target.position.y + 3;
         transform.position = pos;
     }
 }
