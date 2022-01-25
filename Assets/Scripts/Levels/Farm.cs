@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class DesGameMission : GameMission
+public class Farm : GameMission
 {
     //Mision
     public int enemiesMustKill=10;
@@ -24,10 +24,10 @@ public class DesGameMission : GameMission
     }
     public override void KillNewEnemy(GameObject gameObject)
     {
-        if (gameObject.name.Contains("Old Guardian") 
-        || gameObject.name.Contains("Goblin")
-        || gameObject.name.Contains("Snake")
-        || gameObject.name.Contains("Rock")
+        if (gameObject.name.Contains("Huntress") 
+        || gameObject.name.Contains("Bull")
+        || gameObject.name.Contains("Light")
+        || gameObject.name.Contains("Minotaur ")
          || gameObject.name.Contains("Hyena")
         || gameObject.name.Contains("Minotaur"))
         {

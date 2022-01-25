@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class DesGameMission : GameMission
+public class Volcano: GameMission
 {
     //Mision
-    public int enemiesMustKill=10;
+    public int enemiesMustKill=15;
     private int currentKill = 0;
 
     //UI
@@ -24,12 +24,17 @@ public class DesGameMission : GameMission
     }
     public override void KillNewEnemy(GameObject gameObject)
     {
-        if (gameObject.name.Contains("Old Guardian") 
-        || gameObject.name.Contains("Goblin")
-        || gameObject.name.Contains("Snake")
-        || gameObject.name.Contains("Rock")
-         || gameObject.name.Contains("Hyena")
-        || gameObject.name.Contains("Minotaur"))
+        if (gameObject.name.Contains("Bringer") 
+        || gameObject.name.Contains("Old Golem")
+        || gameObject.name.Contains("Evil Tree")
+        || gameObject.name.Contains("Arcane Archer")
+         || gameObject.name.Contains("Ghost")
+          || gameObject.name.Contains("Snake")
+           || gameObject.name.Contains("Skeleton")
+            || gameObject.name.Contains("Ghost")
+             || gameObject.name.Contains("NightBorne")
+         || gameObject.name.Contains("Goblin")
+        || gameObject.name.Contains("Old Guardian"))
         {
             currentKill++;
             text.text = currentKill + "/" + enemiesMustKill ;
