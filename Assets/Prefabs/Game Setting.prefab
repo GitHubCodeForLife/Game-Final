@@ -52,6 +52,60 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 0
+  - name: Player_Shoot
+    clip: {fileID: 8300000, guid: dd64f2c2d099e594a8161a6bf966684b, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Player_Run
+    clip: {fileID: 8300000, guid: 55c43f09b9cbf3c41ae940c84981e7fb, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 1
+  - name: Player_Attack
+    clip: {fileID: 8300000, guid: 8bd122f731834f04e8d636d22ae6d356, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 1
+  - name: Player_Death
+    clip: {fileID: 8300000, guid: 62776d3e24f58fc438f1f2e97fb213cf, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Player_Jump
+    clip: {fileID: 8300000, guid: a8b11e95aafd57e4cbd2e694c238c7ba, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Grenade_Explore
+    clip: {fileID: 8300000, guid: 97423f29cadacc046a31c24dc3f7fb16, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Grenade_Molotov
+    clip: {fileID: 8300000, guid: 225a38b81d7727e43815e23d28e84500, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Item_Collective
+    clip: {fileID: 8300000, guid: bac502be078507443b6350a04a873078, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Enemy_Death
+    clip: {fileID: 8300000, guid: cf4d1d5b6fa92c144b5fabc6427f116c, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
 --- !u!82 &874600
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4299,3 +4353,4 @@ MonoBehaviour:
   winGameUI: {fileID: 525091866}
   startPosition: {fileID: 0}
   gameMission: {fileID: 0}
+  currentLevel: 0

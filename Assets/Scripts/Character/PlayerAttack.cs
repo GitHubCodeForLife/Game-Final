@@ -63,10 +63,8 @@ public class PlayerAttack : MonoBehaviour
     }
     private void Start()
     {
-
         HUDPlayer.instance.SetBullet(bulletNumber);
         HUDPlayer.instance.SetGrenade(grenadeNumber);
-
     }
 
     private void InitialWeapon()
@@ -88,12 +86,15 @@ public class PlayerAttack : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && currentAttackTime <= 0)
         {
+            
             currentAttackTime = attackTime;
             SetAnimAttack();
+            AudioManager.instance.PlayOneShot("Player_Attack");
             //Attack();
         }
         if (Input.GetKeyDown(KeyCode.F) && currentFireTime <= 0 && bulletPrefab != null && bulletNumber > 0)
         {
+            AudioManager.instance.PlayOneShot("Player_Shoot");
             bulletNumber--;
             HUDPlayer.instance.SetBullet(bulletNumber);
             Shoot();
