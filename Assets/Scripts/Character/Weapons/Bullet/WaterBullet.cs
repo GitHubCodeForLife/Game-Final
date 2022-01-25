@@ -7,7 +7,13 @@ public class WaterBullet : MonoBehaviour
     public float speed = 20f;
     public GameObject impactEffect;
     public int damage = 20;
-
+    public float timeExist = 10f;
+    private void Update()
+    {
+        timeExist -= Time.deltaTime;
+        if (timeExist <= 0)
+            Destroy(gameObject);
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Bullet : " + collision.gameObject.name);
@@ -20,9 +26,10 @@ public class WaterBullet : MonoBehaviour
 
         GameObject impactObject = Instantiate(impactEffect, pos, quaternion);
 
-        Destroy(gameObject);
+        Destroy(gameObject);    
         if (collision.CompareTag("Enemies"))
         {
+            Debug.Log("Bullet : " + collision.gameObject.name);
             Enemy enemy = collision.GetComponent<Enemy>();
             if (enemy != null) enemy.Freeze();
             bool isCrit = GameRandom.RandomCriteRate();

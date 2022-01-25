@@ -15,7 +15,7 @@ public class Gamelogic : MonoBehaviour
     //Mission kill Enemies
     public GameMission gameMission;
 
-    private void Awake()
+    private void Start()
     {
         savePoint = startPosition.position;
         SpawnPlayer(savePoint);
@@ -29,7 +29,6 @@ public class Gamelogic : MonoBehaviour
         GameObject player = playerFactory.SpawnPlayer(pos);
         vcam.Follow = player.transform;
     }
-
 
     private void OnEnable()
     {

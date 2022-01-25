@@ -654,7 +654,7 @@ MonoBehaviour:
     state: 2
   - name: Farm
     stars: 0
-    state: 2
+    state: 1
   listLevels:
   - {fileID: 2920390867838056419, guid: 39184d259561e4c4695f5425d5ea8815, type: 3}
   - {fileID: 6326289071645447797, guid: 2a0a0697825d85e468084dc331b4f0f3, type: 3}

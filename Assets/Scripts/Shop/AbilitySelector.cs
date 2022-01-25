@@ -55,6 +55,7 @@ public class AbilitySelector : MonoBehaviour
 
     public void SelectAbility(int index)
     {
+        if (priceButton == null) return;
         currentAbility = index;
         AbilityShop abilityShop = abilityShops[index];
 

@@ -55,6 +55,7 @@ public class GunSelector : MonoBehaviour
 
     public void SelectGuns(int index)
     {
+        if (priceButton == null) return;
         currentGun = index;
       
         GunShop gunShop = gunShops[index];
@@ -89,6 +90,7 @@ public class GunSelector : MonoBehaviour
     }
     public void BuyGun()
     {
+      
         if (GameStorageManager.shopInfo.guns[currentGun].state == STATE_ITEM.BOUGHT)
         {
             for (int i = 0; i < GameStorageManager.shopInfo.guns.Count; i++)
@@ -103,6 +105,11 @@ public class GunSelector : MonoBehaviour
         }
         else
         {
+            //Remember Check Gold before BUY
+            int price = GameStorageManager.shopInfo.guns[currentGun].price;
+            bool purchase = ShopKeeper.instance.Purchase(price);
+            if (purchase == false) return;
+
             //Remember Check Gold before BUY
             GameStorageManager.shopInfo.guns[currentGun].state = STATE_ITEM.BOUGHT;
         }

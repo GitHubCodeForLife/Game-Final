@@ -46,6 +46,11 @@ public class PlayerAttack : MonoBehaviour
     protected Gun gun;
     protected GameObject bulletPrefab;
 
+    internal void ChangeBullet()
+    {
+       bulletPrefab = bulletPrefab = bulletFactory.GetBullet("IceBullet");
+    }
+
 
     // Start is called before the first frame update
     void Awake()
@@ -58,8 +63,10 @@ public class PlayerAttack : MonoBehaviour
     }
     private void Start()
     {
+
         HUDPlayer.instance.SetBullet(bulletNumber);
         HUDPlayer.instance.SetGrenade(grenadeNumber);
+
     }
 
     private void InitialWeapon()
@@ -69,14 +76,12 @@ public class PlayerAttack : MonoBehaviour
 
         thrower = new GrenadeThrower();
         gun = new Gun();
-        // thrower =  gameObject.AddComponent<GrenadeThrower>();
-        //gun = gameObject.AddComponent<NormalGun>();
-
+ 
         Debug.Log("Player Advance Attack - Grenade type " + GameStorageManager.GetSelectedGrenade());
         Debug.Log("Player Advance Attack - Gun type " + GameStorageManager.GetSelectedGun());
+
         grenadePrefabs = grenadeFactory.GetGrenade(GameStorageManager.GetSelectedGrenade());
         bulletPrefab = bulletFactory.GetBullet(GameStorageManager.GetSelectedGun());
-        //bulletPrefab = bulletFactory.GetBullet("Water Gun");
     }
     // Update is called once per frame
     void Update()
@@ -133,7 +138,11 @@ public class PlayerAttack : MonoBehaviour
     }
     public void ChangeGun(string item)
     {
-        if (item == "S")
+        if (item == "Gun")
+            gun = new Gun();
+        if (item == "TwoGun")
+            gun = new TwoGun();
+        if (item == "ThreeGun")
             gun = new ThreeGun();
         bulletNumber = 10;
         HUDPlayer.instance.SetBullet(bulletNumber);

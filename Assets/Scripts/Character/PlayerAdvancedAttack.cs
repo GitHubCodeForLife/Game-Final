@@ -38,9 +38,11 @@ public class PlayerAdvancedAttack : PlayerAttack
     }
     protected override void ThrowGrenade()
     {
-        Debug.Log("Player Advanec Attack - Throw Grenade");
-        int direction = transform.rotation.y == 0 ? 1 : -1;
-        thrower.ThrowGrenade(grenadePrefabs, attackPoint.position, attackPoint.rotation, new Vector2(direction * 5, 5));
+        Vector3 t = new Vector2(transform.localScale.x * 0.5f, 0.5f);
+        thrower.ThrowGrenade(grenadePrefabs, attackPoint.position + t, attackPoint.rotation, new Vector2(transform.localScale.x * 5, 5));
+        //Debug.Log("Player Advanec Attack - Throw Grenade");
+        //int direction = transform.rotation.y == 0 ? 1 : -1;
+        //thrower.ThrowGrenade(grenadePrefabs, attackPoint.position, attackPoint.rotation, new Vector2(direction * 5, 5));
     }
 
 }

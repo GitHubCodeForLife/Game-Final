@@ -32,20 +32,25 @@ public class PlayerHealth : MonoBehaviour
 
     private bool IsDie = false;
 
+   // public bool IsTurnOnShield { get; private set; }
+
     private void Awake()
     {
         //Take form local storage
         //GameStorageManager.shopInfo.abilities
         IsDie = false;
         animator = GetComponent<Animator>();
+        
+
     }
     private void Start()
     {
         currentDeathlessTimer = deathlessTimer;
+        //IsTurnOnShield = false;
     }
     private void Update()
     {
-        if (currentDeathlessTimer > 0 && IsDie==false)
+        if (currentDeathlessTimer > 0 && IsDie==false )
         {
             TurnOnShield();
         }else
@@ -57,6 +62,11 @@ public class PlayerHealth : MonoBehaviour
         HUDPlayer.instance.SetLifeText(life);
     }
 
+    internal void SetDeathLessTimer(int v)
+    {
+        currentDeathlessTimer = v;
+    }
+
     private void TurnOffShield()
     {
         if (shieldObject != null)
@@ -65,9 +75,10 @@ public class PlayerHealth : MonoBehaviour
 
     private void TurnOnShield()
     {
+  
         if (shieldObject != null)
         {
-            Debug.Log("Turn on Shield");
+            //Debug.Log("Turn on Shield");
             shieldObject.SetActive(true);
         }
     }
@@ -80,16 +91,20 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(int damage)
     {
         if (currentDeathlessTimer > 0) return;
-        currentDeathlessTimer = deathlessTimer;
 
-        Debug.Log(damage);
+        currentDeathlessTimer = deathlessTimer;
         //life--;
         life = Mathf.Clamp(life - 1, 0, maxLife);
-        animator.SetTrigger("Hurt");
         HUDPlayer.instance.SetLifeText(life);
-        if (life<=0)
+        animator.SetTrigger("Hurt");
+        if (life <= 0)
             Died();
-      
+        else
+        {
+            AudioManager.instance.Play("Player_Hurt");
+            if (CinemachineShake.Instance != null)
+                CinemachineShake.Instance.ShakeCamera(5f, 0.3f);
+        }
     }
 
     // every 2 seconds perform the print()

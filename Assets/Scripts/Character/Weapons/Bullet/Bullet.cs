@@ -9,6 +9,13 @@ public class Bullet : MonoBehaviour
     
     public int damage = 20;
 
+    public float timeExist = 10f;
+    private void Update()
+    {
+        timeExist -= Time.deltaTime;
+        if (timeExist <= 0)
+            Destroy(gameObject);
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("Bullet : " + collision.gameObject.name);

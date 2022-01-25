@@ -25,7 +25,7 @@ public class CardLevel : MonoBehaviour
 
     private void InitialLevels()
     {
-       // if (GameStorageManager.gameInfo.levels != null) return;
+        if (GameStorageManager.gameInfo.levels != null) return;
         List<LevelInfo> levelsInfor = new List<LevelInfo>();
         foreach(LevelInfo level in levelsInput)
         {
