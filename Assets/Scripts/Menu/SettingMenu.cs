@@ -79,4 +79,13 @@ public class SettingMenu : MonoBehaviour
     {
         audioEffectMixer.SetFloat("effect", volume);
     }
+    private void OnDestroy()
+    {
+        float bg, effect;
+        audioBgMixer.GetFloat("bg",out bg);
+        audioEffectMixer.GetFloat("effect", out effect);
+        GameStorageManager.gameInfo.bgAudioMixer = bg;
+        GameStorageManager.gameInfo.effectAudioMixer = effect;
+        GameStorageManager.SaveGameInfo();
+    }
 }

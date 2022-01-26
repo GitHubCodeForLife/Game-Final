@@ -11,5 +11,6 @@ public class PlayerInfo
     //public WeaponInfo grenade;
     //public CharacterInfo selectedCharacter;
     public int gold;
+  
     //public int level;
 }

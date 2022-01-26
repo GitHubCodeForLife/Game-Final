@@ -9,4 +9,7 @@ public class GameInfo
 {
     public List<LevelInfo> levels;
     public PlayerInfo playerInfo;
+    public float effectAudioMixer;
+    public float bgAudioMixer;
+    public bool isPassIntro;
 }

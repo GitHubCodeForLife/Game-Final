@@ -55,7 +55,11 @@ public class CardLevel : MonoBehaviour
             if (levelState != null)
             {
                 string game = levelsInput[i].name;
-                level.GetComponent<Button>().onClick.AddListener(() => LoadLevel(game));
+                level.GetComponent<Button>().onClick.AddListener(() => {
+                    if (LevelLoader.Instance != null)
+                        LevelLoader.Instance.LoadLevel(game);
+                    else LoadLevel(game);
+                });
                 levelState.SetTextLevel((i+1).ToString());
             }
             level.transform.SetParent(gridLayout.transform);

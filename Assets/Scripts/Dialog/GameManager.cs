@@ -12,11 +12,12 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         //PlayerPrefs.DeleteAll();
-        int MyInt = PlayerPrefs.GetInt("MyGame");
-        Debug.Log(MyInt);
-        if (MyInt == 1)
+        bool isPassIntro = GameStorageManager.gameInfo.isPassIntro;
+        if (isPassIntro == true)
+        {
             SceneManager.LoadScene("Menu");
-
+        }
+        
     }
 
     private void Start()
@@ -51,8 +52,8 @@ public class GameManager : MonoBehaviour
     }
     private void OnDestroy()
     {
-        Debug.Log("Game Destroy");
-        PlayerPrefs.SetInt("MyGame", 1);
+        GameStorageManager.gameInfo.isPassIntro = true;
+        GameStorageManager.SaveGameInfo();
     }
 }
 

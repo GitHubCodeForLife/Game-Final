@@ -19,6 +19,7 @@ public class GameSetup : MonoBehaviour
     private void ReadGold()
     {
         gold = GameStorageManager.gameInfo.playerInfo.gold;
+        
         coinText.text = gold.ToString();
     }
 

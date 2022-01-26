@@ -16,6 +16,7 @@ public class Gamelogic : MonoBehaviour
     public GameMission gameMission;
     public int currentLevel;
 
+   
     private void Start()
     {
         savePoint = startPosition.position;
@@ -68,7 +69,8 @@ public class Gamelogic : MonoBehaviour
                 stars = gameMission.CountStar();
             else
                 stars = 3;
-          
+            if (GameStorageManager.gameInfo.levels == null) return;
+
             currentLevel =  GetCurrentLevel();
             LevelInfo levelInfo = GameStorageManager.gameInfo.levels[currentLevel];
             levelInfo.stars = stars;
@@ -114,7 +116,11 @@ public class Gamelogic : MonoBehaviour
     }
     public void PlayGameAgain()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        string name = SceneManager.GetActiveScene().name;
+        if (LevelLoader.Instance != null)
+            LevelLoader.Instance.LoadLevel(name);
+        else
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void KillNewEnemy(GameObject enemy)
     {

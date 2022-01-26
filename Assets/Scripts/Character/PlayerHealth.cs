@@ -41,7 +41,7 @@ public class PlayerHealth : MonoBehaviour
         IsDie = false;
         animator = GetComponent<Animator>();
 
-        coin = GameStorageManager.gameInfo.playerInfo.gold;
+
     }
 
     internal void KillPlayer()
@@ -56,6 +56,10 @@ public class PlayerHealth : MonoBehaviour
     private void Start()
     {
         currentDeathlessTimer = deathlessTimer;
+        if (GameStorageManager.gameInfo != null)
+            coin = GameStorageManager.gameInfo.playerInfo.gold;
+        else
+            coin = 0;
         //IsTurnOnShield = false;
     }
     private void Update()

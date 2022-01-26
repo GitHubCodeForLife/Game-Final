@@ -715,6 +715,7 @@ GameObject:
   - component: {fileID: 608378417}
   - component: {fileID: 608378416}
   - component: {fileID: 608378415}
+  - component: {fileID: 608378419}
   m_Layer: 0
   m_Name: Loading
   m_TagString: Untagged
@@ -944,6 +945,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &608378419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608378414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8ea43fa54b003b43b56512aaace5b2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gold: 3000
+  coinText: {fileID: 1671077114}
 --- !u!1 &610451290
 GameObject:
   m_ObjectHideFlags: 0
@@ -4291,6 +4306,17 @@ MonoBehaviour:
     - Use "A" or "<-" key to move Left
     name: Boss
   rightMove: {fileID: 713556164}
+--- !u!114 &1671077114 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2708369687077194222, guid: 5d7b66bad7b57154faf0c8a9978c7f19, type: 3}
+  m_PrefabInstance: {fileID: 1697363241}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1697363241
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4298,6 +4324,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1313226786, guid: 5d7b66bad7b57154faf0c8a9978c7f19, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708369686952170871, guid: 5d7b66bad7b57154faf0c8a9978c7f19, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3606273187321735496, guid: 5d7b66bad7b57154faf0c8a9978c7f19, type: 3}
       propertyPath: m_Name
       value: Game Setting
