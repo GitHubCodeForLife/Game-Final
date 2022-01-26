@@ -14,12 +14,13 @@ public class Boom : MonoBehaviour
     private void OnCollisionStay2D(Collision2D collision)
     {
         Debug.Log("Boom");
+      
         Explore();
     }
 
     public void Explore()
     {
-       
+        AudioManager.instance.PlayOneShot("Grenade_Explore");
         //Show Effect 
         GameObject explosion = Instantiate(explosionEffect, transform.position, transform.rotation);
         Destroy(explosion, 1);

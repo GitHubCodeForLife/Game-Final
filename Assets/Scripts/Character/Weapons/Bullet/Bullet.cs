@@ -9,7 +9,7 @@ public class Bullet : MonoBehaviour
     
     public int damage = 20;
 
-    public float timeExist = 10f;
+    public float timeExist = 5f;
     private void Update()
     {
         timeExist -= Time.deltaTime;

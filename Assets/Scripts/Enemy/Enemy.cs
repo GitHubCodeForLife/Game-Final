@@ -26,11 +26,11 @@ public class Enemy : MonoBehaviour
     protected PlayerHealth playerHealth;
 
     [Header("Water Bullet")]
-    private const float freezeTime = 10f;
+    private const float freezeTime = 5f;
     private float currentFreezeTime = 0f;
 
     [Header("ICE Bullete")]
-    private const float iceTime = 10f;
+    private const float iceTime = 5f;
     private float currentIceTime = 0f;
 
     Animator animator;

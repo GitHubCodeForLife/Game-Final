@@ -54,7 +54,7 @@ public class EnemyHealth : MonoBehaviour
                 if (IsRight)
                     transform.localScale = new Vector3(1, 1, 1);
                 else transform.localScale = new Vector3(-1, 1, 1);
-                Debug.Log("Attack Player");
+                //Debug.Log("Attack Player");
                 animator.SetTrigger("Attack");
                 StartCoroutine(WaitPlayerDie(2f));
             }
@@ -87,7 +87,6 @@ public class EnemyHealth : MonoBehaviour
         if (animator != null)
         {
             animator.SetTrigger("Hurt");
-            //AudioManager.instance.Play("Player_Hurt");
         }
         currentHealth -= damage;
         if (healthBar != null)
@@ -95,7 +94,7 @@ public class EnemyHealth : MonoBehaviour
         if (currentHealth <= 0 && isDie == false)
         {
             isDie = true;
-            Die();
+            Die(); return;
         }
     }
 
@@ -129,7 +128,6 @@ public class EnemyHealth : MonoBehaviour
             SpawnEffect.instance.SpawnDamageCritEffect(damagePoint.position + new Vector3(range, 0), Quaternion.identity, damage);
     }
 
-
     public void Die()
     {
         animator.SetTrigger("Death");
@@ -147,6 +145,8 @@ public class EnemyHealth : MonoBehaviour
         Gamelogic gamelogic = FindObjectOfType<Gamelogic>();
         if (gamelogic != null)
             gamelogic.KillNewEnemy(gameObject);
+        AudioManager.instance.PlayOneShot("Enemy_Death");
+
     }
 
 

@@ -13,7 +13,7 @@ public class PlayerHealth : MonoBehaviour
     private const float WaitTime = 2.0f;
     int maxLife = 10;
     int life = 3;
-    int coin = 100;
+    int coin ;
     private Animator animator;
 
     public delegate void PlayerDied();
@@ -40,8 +40,8 @@ public class PlayerHealth : MonoBehaviour
         //GameStorageManager.shopInfo.abilities
         IsDie = false;
         animator = GetComponent<Animator>();
-        
 
+        coin = GameStorageManager.gameInfo.playerInfo.gold;
     }
     private void Start()
     {
@@ -101,7 +101,7 @@ public class PlayerHealth : MonoBehaviour
             Died();
         else
         {
-            AudioManager.instance.Play("Player_Hurt");
+            AudioManager.instance.PlayOneShot("Player_Hurt");
             if (CinemachineShake.Instance != null)
                 CinemachineShake.Instance.ShakeCamera(5f, 0.3f);
         }
@@ -113,7 +113,6 @@ public class PlayerHealth : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         if (playerDied != null)
         {
-
             //  Debug.Log("Player Died");
             playerDied();
         }
@@ -125,6 +124,7 @@ public class PlayerHealth : MonoBehaviour
     private void Died()
     {
         // TurnOffShield();
+        AudioManager.instance.PlayOneShot("Player_Death");
         IsDie = true;
         DestroyAbilities();
         Time.timeScale = 0.25f;
@@ -138,5 +138,10 @@ public class PlayerHealth : MonoBehaviour
         PlayerMovement playerMovement = GetComponent<PlayerMovement>();
         if (playerAttack != null) playerAttack.enabled = false;
         if (playerMovement != null) playerMovement.enabled = false;
+    }
+    private void OnDestroy()
+    {
+        GameStorageManager.gameInfo.playerInfo.gold = coin;
+        GameStorageManager.SaveGameInfo();
     }
 }

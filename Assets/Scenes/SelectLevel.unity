@@ -645,13 +645,13 @@ MonoBehaviour:
     state: 0
   - name: Forrest
     stars: 1
-    state: 0
+    state: 2
   - name: Jungle
     stars: 0
-    state: 2
+    state: 1
   - name: Volcano
     stars: 0
-    state: 2
+    state: 1
   - name: Farm
     stars: 0
     state: 1
