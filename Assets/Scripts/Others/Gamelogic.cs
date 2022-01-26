@@ -61,6 +61,7 @@ public class Gamelogic : MonoBehaviour
     {
         if (gameMission == null || gameMission.IsCompleteMission())
         {
+         
             winGameUI.gameObject.SetActive(true);
             int stars;
             if (gameMission != null)

@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     private PlayerMovement playerMovement;
     void Awake()
     {
-        PlayerPrefs.DeleteAll();
+        //PlayerPrefs.DeleteAll();
         int MyInt = PlayerPrefs.GetInt("MyGame");
         Debug.Log(MyInt);
         if (MyInt == 1)
@@ -48,8 +48,11 @@ public class GameManager : MonoBehaviour
             playerAttack.enabled = true;
             playerMovement.enabled = false;
         }
-
-
+    }
+    private void OnDestroy()
+    {
+        Debug.Log("Game Destroy");
+        PlayerPrefs.SetInt("MyGame", 1);
     }
 }
 

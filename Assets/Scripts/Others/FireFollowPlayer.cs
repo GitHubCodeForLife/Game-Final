@@ -4,20 +4,23 @@ using UnityEngine;
 
 public class FireFollowPlayer : MonoBehaviour
 {
-    public Transform target;
+    private Transform target;
+    public float height;
     // Start is called before the first frame update
     void Start()
     {
-       // target = GameObject.FindObjectOfType<PlayerMovement>().transform;
+       
     }
 
     // Update is called once per frame
     void Update()
     {
+        target = GameObject.FindObjectOfType<PlayerMovement>().transform;
+
         if (target == null) return;
         Vector3 pos = transform.position;
         pos.x = target.position.x;
-        pos.y = target.position.y+0.75f;
+        pos.y = target.position.y+ height;
         transform.position = pos;
     }
 }
