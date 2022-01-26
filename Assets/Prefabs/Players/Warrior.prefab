@@ -195,7 +195,7 @@ MonoBehaviour:
   groundSensor: {fileID: 5178568954568080637}
   dustEffect: {fileID: 9179861789467126808, guid: 151bd7034a8875f409659aa79055e720, type: 3}
   jumpForce: 5
-  defaultJumpStep: 3
+  defaultJumpStep: 2
 --- !u!114 &5178568953692130573
 MonoBehaviour:
   m_ObjectHideFlags: 0

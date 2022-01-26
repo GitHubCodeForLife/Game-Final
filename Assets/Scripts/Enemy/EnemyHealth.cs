@@ -72,13 +72,13 @@ public class EnemyHealth : MonoBehaviour
 
     private bool RandomAttack()
     {
+        if (isDie == true) return false;
         if (currentHealth < maxHealth/2 || level >=2)
         {
             float[] rate = { 50, 50 };
             float result = GameRandom.Choose(rate);
             return result == 0 ? false : true;
         }
-        
         return false;
     }
 

@@ -43,6 +43,16 @@ public class PlayerHealth : MonoBehaviour
 
         coin = GameStorageManager.gameInfo.playerInfo.gold;
     }
+
+    internal void KillPlayer()
+    {
+        life = Mathf.Clamp(0, 0, maxLife);
+        HUDPlayer.instance.SetLifeText(life);
+        animator.SetTrigger("Hurt");
+        if (life <= 0)
+            Died();
+    }
+
     private void Start()
     {
         currentDeathlessTimer = deathlessTimer;

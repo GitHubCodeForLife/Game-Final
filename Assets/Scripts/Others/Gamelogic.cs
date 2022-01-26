@@ -63,7 +63,7 @@ public class Gamelogic : MonoBehaviour
         {
             winGameUI.gameObject.SetActive(true);
             int stars;
-            if (game != null)
+            if (gameMission != null)
                 stars = gameMission.CountStar();
             else
                 stars = 3;
