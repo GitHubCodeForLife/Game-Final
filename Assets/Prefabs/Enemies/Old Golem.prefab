@@ -294,6 +294,7 @@ MonoBehaviour:
   healthBar: {fileID: 9141381774432712590}
   isDie: 0
   damagePoint: {fileID: 9141381773170543925}
+  level: 1
 --- !u!114 &9141381773520764358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,7 +312,6 @@ MonoBehaviour:
   maxMovingTimer: 5
   minMovingTimer: 1
   speed: 1
-  direction: 1
   damage: 10
   force: 2
   range: 1.04
