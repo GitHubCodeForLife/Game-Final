@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 225a544b23ece5741abb45ca7e3af4fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 6
   animator: {fileID: 5178568953692130615}
   rigidbody2d: {fileID: 5178568953692130571}
   groundSensor: {fileID: 5178568954568080637}
@@ -214,7 +214,7 @@ MonoBehaviour:
     m_Bits: 128
   attackPoint: {fileID: 5178568953342791657}
   attackRange: 1.31
-  attackDamage: 30
+  attackDamage: 40
   range: 1.07
   attackTime: 0.5
   FireSpeedTime: 0.5

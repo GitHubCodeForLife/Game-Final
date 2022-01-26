@@ -119,7 +119,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   impactEffect: {fileID: 7697679949193769099, guid: 428ed7ede8b23034e9d4d5dd73f925ac, type: 3}
-  damage: 20
+  damage: 35
+  timeExist: 10
 --- !u!50 &355543773
 Rigidbody2D:
   serializedVersion: 4

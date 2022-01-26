@@ -34,9 +34,7 @@ public class Farm : GameMission
             currentKill++;
             text.text = currentKill + "/" + enemiesMustKill ;
             Star.text = "Current Star : " + CountStar();
-        }
-       
-       
+        }  
     }
 }
 

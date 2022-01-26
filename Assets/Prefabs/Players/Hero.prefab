@@ -275,7 +275,7 @@ MonoBehaviour:
     m_Bits: 128
   attackPoint: {fileID: 2025602838612853289}
   attackRange: 1.29
-  attackDamage: 30
+  attackDamage: 35
   range: 0.5
   attackTime: 0.5
   FireSpeedTime: 0.5

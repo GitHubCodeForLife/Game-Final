@@ -738,38 +738,38 @@ MonoBehaviour:
   grenadeShops:
   - name: Dynamite 01
     price: 150
-    ability: "Ph\xE1o l\xE0 lo\u1EA1i v\u0169 kh\xED s\xE1t th\u01B0\u01A1ng cao"
-    damage: 90
+    ability: Default grenade
+    damage: 60
     state: 1
     sr: {fileID: 21300000, guid: 8ca71aa8203f7f74487637e81c278d52, type: 3}
   - name: Hand Grenade 02
     price: 200
-    ability: "l\u1EF1u \u0111\u1EA1n h\u1EB9n gi\u1EDD n\u1ED5 theo th\u1EDDi gian"
-    damage: 110
+    ability: Hand grenade 02
+    damage: 60
     state: 0
     sr: {fileID: 21300000, guid: 62bf1d08bd1db2a449b2ebb035e874cf, type: 3}
   - name: Hand Grenade 03
     price: 250
-    ability: "l\u1EF1u \u0111\u1EA1n h\u1EB9n gi\u1EDD n\u1ED5 theo th\u1EDDi gian"
-    damage: 120
+    ability: Hand Grenade 03
+    damage: 70
     state: 0
     sr: {fileID: 21300000, guid: e42f66395b746bb40b4f21845f3d0b65, type: 3}
   - name: Molotov Cocktail 01
-    price: 150
-    ability: "Khi n\u1ED5 t\u1EA1o ra l\u1EEBa tr\xEAn ph\u1EA1m vi l\u1EDBn"
+    price: 350
+    ability: Create fire when boom
     damage: 30
     state: 0
     sr: {fileID: 21300000, guid: fc43fed1ea909fe45aa5659023286740, type: 3}
   - name: Molotov Cocktail 03
-    price: 250
-    ability: "Khi n\u1ED5 t\u1EA1o ra l\u1EEBa tr\xEAn ph\u1EA1m vi l\u1EDBn"
+    price: 350
+    ability: Create fire with high damage when boom
     damage: 70
     state: 0
     sr: {fileID: 21300000, guid: 62cb90bce4d706d4596d902d6affbbd9, type: 3}
   - name: Sea mine 01
-    price: 150
-    ability: "M\xECn khi \u0111i v\xE0o s\u1EBD n\u1ED5"
-    damage: 200
+    price: 300
+    ability: Explore when touch it
+    damage: 100
     state: 0
     sr: {fileID: 21300000, guid: 3bdce9b328a37ef439bd043dbdf8d495, type: 3}
   priceButton: {fileID: 0}
@@ -793,68 +793,68 @@ MonoBehaviour:
   gunShops:
   - name: Gun 01
     price: 50
-    ability: "s\xFAng m\u1EB7c \u0111\u1ECBnh c\u1EE7a nh\xE2n v\u1EADt"
+    ability: Default gun
     damage: 10
     state: 1
     sr: {fileID: 21300000, guid: 157cacefa81315143a2cca6e7b873c5e, type: 3}
   - name: Gun 02
     price: 200
-    ability: "M\xECn khi \u0111i v\xE0o s\u1EBD n\u1ED5"
+    ability: 
     damage: 20
     state: 0
     sr: {fileID: 21300000, guid: 052a1fbe064b8a149a6a9bed67aff11e, type: 3}
   - name: Gun 03
     price: 300
-    ability: "M\xECn khi \u0111i v\xE0o s\u1EBD n\u1ED5"
+    ability: 'Full Color '
     damage: 30
     state: 0
     sr: {fileID: 21300000, guid: 82ffd26a9fc8244439a9540e6e5ff1fd, type: 3}
   - name: Gun 04
     price: 300
-    ability: "M\xECn khi \u0111i v\xE0o s\u1EBD n\u1ED5"
+    ability: 'Full Color '
     damage: 30
     state: 0
     sr: {fileID: 21300000, guid: ba5360ca5fa5c9b4d86d25d366aa620a, type: 3}
   - name: Water Gun
-    price: 300
-    ability: "M\xECn khi \u0111i v\xE0o s\u1EBD n\u1ED5"
-    damage: 30
+    price: 400
+    ability: Freeze enemies
+    damage: 10
     state: 0
     sr: {fileID: -4461313894246207580, guid: 862246035021f3245afec812cedee6c0, type: 3}
   - name: Shuriken 01
-    price: 300
-    ability: "M\xECn khi \u0111i v\xE0o s\u1EBD n\u1ED5"
+    price: 150
+    ability: Samurai weapons
     damage: 30
     state: 0
     sr: {fileID: 21300000, guid: d2c196559169e424db5c7d96fed19dfb, type: 3}
   - name: Shuriken 02
-    price: 300
-    ability: "M\xECn khi \u0111i v\xE0o s\u1EBD n\u1ED5"
+    price: 150
+    ability: Samurai weapons
     damage: 30
     state: 0
     sr: {fileID: -4958073741956058109, guid: cf552ef4e5b3eae468dcb5e8510687b4, type: 3}
   - name: Shuriken 03
     price: 300
-    ability: "M\xECn khi \u0111i v\xE0o s\u1EBD n\u1ED5"
+    ability: Samurai weapons
     damage: 30
     state: 0
     sr: {fileID: -6754316141287169435, guid: cf552ef4e5b3eae468dcb5e8510687b4, type: 3}
   - name: Rock
-    price: 300
-    ability: "M\xECn khi \u0111i v\xE0o s\u1EBD n\u1ED5"
-    damage: 30
+    price: 100
+    ability: Rock
+    damage: 25
     state: 0
     sr: {fileID: 4621740753562235160, guid: 7794c6f7e28568741b7687c45d5e56f0, type: 3}
   - name: Fire Gun
-    price: 300
-    ability: "M\xECn khi \u0111i v\xE0o s\u1EBD n\u1ED5"
+    price: 350
+    ability: Create fire
     damage: 30
     state: 0
     sr: {fileID: 21300000, guid: 0869b1e96aac6d34cb086976dc7af826, type: 3}
   - name: IceBullet
-    price: 300
-    ability: "M\xECn khi \u0111i v\xE0o s\u1EBD n\u1ED5"
-    damage: 30
+    price: 350
+    ability: Slow enemy
+    damage: 35
     state: 0
     sr: {fileID: 21300000, guid: 6bae5ed516da5e34989ad389555d14c1, type: 3}
   priceButton: {fileID: 0}
@@ -877,52 +877,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   charactorShops:
   - name: Samurai
+    damage: 50
+    speed: 7
+    ability: Bring martial arts spirit
+    price: 100
+    sr: {fileID: 21300000, guid: 50a8612a8c0863346be01cb8c8bff763, type: 3}
+    state: 0
+  - name: Death
     damage: 40
     speed: 5
-    ability: Attack enemies quickly
-    price: 0
-    sr: {fileID: 21300000, guid: 50a8612a8c0863346be01cb8c8bff763, type: 3}
-    state: 1
-  - name: Death
-    damage: 50
-    speed: 3
-    ability: Can fly in small time
+    ability: Can double Jump
     price: 100
     sr: {fileID: 21300000, guid: e255805503914a9478d03f7cf0f0beeb, type: 3}
     state: 0
   - name: Hero
-    damage: 30
-    speed: 4
-    ability: Can use Gun
-    price: 300
+    damage: 35
+    speed: 5
+    ability: High spririte
+    price: 100
     sr: {fileID: 21300000, guid: 9fa579fbbe0661b4caa67181ff225a95, type: 3}
     state: 0
   - name: Soldier
-    damage: 45
-    speed: 6
-    ability: Full Power
-    price: 400
+    damage: 35
+    speed: 5
+    ability: High spririte
+    price: 100
     sr: {fileID: 21300000, guid: 55cc3a506634c8047a337ba313326a53, type: 3}
-    state: 0
+    state: 1
   - name: Kid Night
-    damage: 45
-    speed: 6
-    ability: Full Power
-    price: 400
+    damage: 30
+    speed: 10
+    ability: Move quickly, combo attacks
+    price: 300
     sr: {fileID: -309902585204326486, guid: 7737c59665ac1a84babefcec8bac60b0, type: 3}
     state: 0
   - name: Warrior
-    damage: 45
+    damage: 40
     speed: 6
-    ability: Full Power
-    price: 400
+    ability: Combo 3 attack
+    price: 350
     sr: {fileID: 4723107735738678597, guid: 012c8b238c5f1364ba8424a0f729b31e, type: 3}
     state: 0
   - name: Martial Hero
-    damage: 45
+    damage: 100
     speed: 6
-    ability: Full Power
-    price: 400
+    ability: Full power, and attack far distance
+    price: 500
     sr: {fileID: 4723107735738678597, guid: b829d8212b73bc14cbfc6e34a5b0b1d5, type: 3}
     state: 0
   playerImage: {fileID: 0}
