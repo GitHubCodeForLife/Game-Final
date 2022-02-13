@@ -457,6 +457,7 @@ MonoBehaviour:
   healthBar: {fileID: 1818470109128499894}
   isDie: 0
   damagePoint: {fileID: 1818470107866724943}
+  level: 1
 --- !u!50 &1818470109077285500
 Rigidbody2D:
   serializedVersion: 4

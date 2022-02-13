@@ -75,8 +75,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1445414169
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -5505790624117488060, guid: feef45b9b5106f14a93a6a6d4687b56c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -162,7 +162,6 @@ MonoBehaviour:
   maxMovingTimer: 5
   minMovingTimer: 1
   speed: 1
-  direction: 1
   damage: 10
   force: 2
   range: 1.7
@@ -188,6 +187,7 @@ MonoBehaviour:
   healthBar: {fileID: 4883929900083248261}
   isDie: 0
   damagePoint: {fileID: 4883929901324969589}
+  level: 1
 --- !u!1 &4883929899622476624
 GameObject:
   m_ObjectHideFlags: 0

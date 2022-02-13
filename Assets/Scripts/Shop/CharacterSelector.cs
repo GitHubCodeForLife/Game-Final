@@ -60,6 +60,7 @@ public class CharacterSelector : MonoBehaviour
 
     public void SelectCharactor(int index)
     {
+        if (priceButton == null) return;
         currentPlayer = index;
         CharacterShop characterShop = charactorShops[index];
         if (characterShop.state == STATE_ITEM.ON_SELL)
@@ -95,6 +96,7 @@ public class CharacterSelector : MonoBehaviour
 
     public void BuyCharacter()
     {
+       
         if (GameStorageManager.shopInfo.characters[currentPlayer].state == STATE_ITEM.BOUGHT) { 
             for(int i=0;i< GameStorageManager.shopInfo.characters.Count; i++)
             {
@@ -108,6 +110,10 @@ public class CharacterSelector : MonoBehaviour
         else
         {
             //Remember Check Gold before BUY
+            int price = GameStorageManager.shopInfo.characters[currentPlayer].price;
+            bool purchase = ShopKeeper.instance.Purchase(price);
+            if (purchase == false) return;
+
             GameStorageManager.shopInfo.characters[currentPlayer].state = STATE_ITEM.BOUGHT;
         }
         GameStorageManager.SaveShopInfo();

@@ -17,6 +17,7 @@ public class SeaMine : MonoBehaviour
     }
     public void Explore()
     {
+        AudioManager.instance.PlayOneShot("Grenade_Explore");
         //Show Effect 
         GameObject explosion = Instantiate(explosionEffect, transform.position, transform.rotation);
         Destroy(explosion, 1);

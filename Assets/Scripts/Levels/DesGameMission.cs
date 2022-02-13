@@ -5,12 +5,12 @@ using UnityEngine.UI;
 public class DesGameMission : GameMission
 {
     //Mision
-    public int enemiesMustKill;
+    public int enemiesMustKill=10;
     private int currentKill = 0;
 
     //UI
     public Text text;
-
+    public Text Star;
     public override bool IsCompleteMission()
     {
         return currentKill >= enemiesMustKill;
@@ -24,11 +24,19 @@ public class DesGameMission : GameMission
     }
     public override void KillNewEnemy(GameObject gameObject)
     {
-        if (gameObject.name.Contains("Huntress"))
+        if (gameObject.name.Contains("Old Guardian") 
+        || gameObject.name.Contains("Goblin")
+        || gameObject.name.Contains("Snake")
+        || gameObject.name.Contains("Rock")
+         || gameObject.name.Contains("Hyena")
+        || gameObject.name.Contains("Minotaur"))
         {
             currentKill++;
-            text.text = currentKill + "/" + enemiesMustKill + ":" + CountStar();
+            text.text = currentKill + "/" + enemiesMustKill ;
+            Star.text = "Current Star : " + CountStar();
         }
+       
+       
     }
 }
 

@@ -33,6 +33,7 @@ public class HandGrenade : MonoBehaviour
 
     public void Explore()
     {
+        AudioManager.instance.PlayOneShot("Grenade_Explore");
         Debug.Log("Boom");
         //Show Effect 
         GameObject explosion = Instantiate(explosionEffect, transform.position, transform.rotation);

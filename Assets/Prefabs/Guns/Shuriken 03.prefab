@@ -120,7 +120,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   impactEffect: {fileID: 5221231358566587090, guid: 2b291641be96bd04287a74f657b0a215, type: 3}
-  damage: 35
+  damage: 30
+  timeExist: 10
 --- !u!60 &1164368217693105001
 PolygonCollider2D:
   m_ObjectHideFlags: 0

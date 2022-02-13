@@ -633,6 +633,7 @@ MonoBehaviour:
   healthBar: {fileID: 3493731701125015607}
   isDie: 0
   damagePoint: {fileID: 3493731700770217207}
+  level: 1
 --- !u!114 &3493731701998454065
 MonoBehaviour:
   m_ObjectHideFlags: 0

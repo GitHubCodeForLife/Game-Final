@@ -7,15 +7,23 @@ public class GameManager : MonoBehaviour
 {
     // Start is called before the first frame update
     public static GAME_STATE gameState = GAME_STATE.DIALOGUE_STARTING;
-    public PlayerAttack playerAttack;
-    public PlayerMovement playerMovement;
+   private PlayerAttack playerAttack;
+    private PlayerMovement playerMovement;
     void Awake()
     {
-       PlayerPrefs.DeleteAll();
-        int MyInt = PlayerPrefs.GetInt("MyGame");
-        Debug.Log(MyInt);
-        if (MyInt == 1)
+        //PlayerPrefs.DeleteAll();
+        bool isPassIntro = GameStorageManager.gameInfo.isPassIntro;
+        if (isPassIntro == true)
+        {
             SceneManager.LoadScene("Menu");
+        }
+        
+    }
+
+    private void Start()
+    {
+        playerAttack = FindObjectOfType<PlayerAttack>();
+        playerMovement = FindObjectOfType<PlayerMovement>();
     }
 
     // Update is called once per frame
@@ -41,8 +49,11 @@ public class GameManager : MonoBehaviour
             playerAttack.enabled = true;
             playerMovement.enabled = false;
         }
-
-
+    }
+    private void OnDestroy()
+    {
+        GameStorageManager.gameInfo.isPassIntro = true;
+        GameStorageManager.SaveGameInfo();
     }
 }
 

@@ -1,7 +1,307 @@
 fileFormatVersion: 2
 guid: 2ebd2d28b5cbbce4f9d8d36d62da0e29
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 8017598588846126235
+    second: bg_santorini_1_0
+  - first:
+      213: -5047476972330077163
+    second: bg_santorini_1_1
+  - first:
+      213: -6561719647137561924
+    second: bg_santorini_1_2
+  - first:
+      213: 420016517573191941
+    second: bg_santorini_1_3
+  - first:
+      213: 6490087940138975466
+    second: bg_santorini_1_4
+  - first:
+      213: 4649190164362020532
+    second: bg_santorini_1_5
+  - first:
+      213: 5199024632418898005
+    second: bg_santorini_1_6
+  - first:
+      213: 3207358066920499104
+    second: bg_santorini_1_7
+  - first:
+      213: -877026104019583633
+    second: bg_santorini_1_8
+  - first:
+      213: -6456269155720343610
+    second: bg_santorini_1_9
+  - first:
+      213: -3976152467464473922
+    second: bg_santorini_1_10
+  - first:
+      213: -2228817580110613614
+    second: bg_santorini_1_11
+  - first:
+      213: -1842777045651008494
+    second: bg_santorini_1_12
+  - first:
+      213: 4107044850254611132
+    second: bg_santorini_1_13
+  - first:
+      213: -8782166331970767699
+    second: bg_santorini_1_14
+  - first:
+      213: 514114910768760765
+    second: bg_santorini_1_15
+  - first:
+      213: -7124166637891793689
+    second: bg_santorini_1_16
+  - first:
+      213: -1303378452093520486
+    second: bg_santorini_1_17
+  - first:
+      213: 9018049342345207577
+    second: bg_santorini_1_18
+  - first:
+      213: 7071241715643764934
+    second: bg_santorini_1_19
+  - first:
+      213: 5512583693172834431
+    second: bg_santorini_1_20
+  - first:
+      213: 2911153104037828551
+    second: bg_santorini_1_21
+  - first:
+      213: -2766879370351336938
+    second: bg_santorini_1_22
+  - first:
+      213: 3644983317745508563
+    second: bg_santorini_1_23
+  - first:
+      213: -3971096412398820102
+    second: bg_santorini_1_24
+  - first:
+      213: -4337059153616401172
+    second: bg_santorini_1_25
+  - first:
+      213: -1275753001879686652
+    second: bg_santorini_1_26
+  - first:
+      213: -6903817458555642577
+    second: bg_santorini_1_27
+  - first:
+      213: -1920706667135441861
+    second: bg_santorini_1_28
+  - first:
+      213: 2984046631256049375
+    second: bg_santorini_1_29
+  - first:
+      213: 7180678407344622276
+    second: bg_santorini_1_30
+  - first:
+      213: 7063092623787935351
+    second: bg_santorini_1_31
+  - first:
+      213: 7591727700297581359
+    second: bg_santorini_1_32
+  - first:
+      213: 6989106183310292422
+    second: bg_santorini_1_33
+  - first:
+      213: 2261117456851300898
+    second: bg_santorini_1_34
+  - first:
+      213: -1812495508517432014
+    second: bg_santorini_1_35
+  - first:
+      213: -6447121405311289369
+    second: bg_santorini_1_36
+  - first:
+      213: 4913765794129918912
+    second: bg_santorini_1_37
+  - first:
+      213: 5638737325624054277
+    second: bg_santorini_1_38
+  - first:
+      213: 3411329324872330602
+    second: bg_santorini_1_39
+  - first:
+      213: -6664112499071202300
+    second: bg_santorini_1_40
+  - first:
+      213: -5768427359317271981
+    second: bg_santorini_1_41
+  - first:
+      213: -6248803045668181104
+    second: bg_santorini_1_42
+  - first:
+      213: -2352399190772358837
+    second: bg_santorini_1_43
+  - first:
+      213: 1796896119645166557
+    second: bg_santorini_1_44
+  - first:
+      213: 8885181833154373764
+    second: bg_santorini_1_45
+  - first:
+      213: -4809415909943237353
+    second: bg_santorini_1_46
+  - first:
+      213: -8846056928854989357
+    second: bg_santorini_1_47
+  - first:
+      213: -5125572096068279978
+    second: bg_santorini_1_48
+  - first:
+      213: -5956671233209129055
+    second: bg_santorini_1_49
+  - first:
+      213: 6401746712194399668
+    second: bg_santorini_1_50
+  - first:
+      213: -6168301775243267468
+    second: bg_santorini_1_51
+  - first:
+      213: 4241713676393854107
+    second: bg_santorini_1_52
+  - first:
+      213: 6025355062927584810
+    second: bg_santorini_1_53
+  - first:
+      213: 8226532296644544367
+    second: bg_santorini_1_54
+  - first:
+      213: -3763601408565368399
+    second: bg_santorini_1_55
+  - first:
+      213: 1523517391416413427
+    second: bg_santorini_1_56
+  - first:
+      213: -7070522878145350298
+    second: bg_santorini_1_57
+  - first:
+      213: -5653071479326657000
+    second: bg_santorini_1_58
+  - first:
+      213: 1323326510006051606
+    second: bg_santorini_1_59
+  - first:
+      213: -7118690270681780066
+    second: bg_santorini_1_60
+  - first:
+      213: -854997070785143687
+    second: bg_santorini_1_61
+  - first:
+      213: 5574241232927932351
+    second: bg_santorini_1_62
+  - first:
+      213: -5961464891374979205
+    second: bg_santorini_1_63
+  - first:
+      213: -803434237709983175
+    second: bg_santorini_1_64
+  - first:
+      213: -8450065379543937554
+    second: bg_santorini_1_65
+  - first:
+      213: -7143743735812204532
+    second: bg_santorini_1_66
+  - first:
+      213: -5062814000535666533
+    second: bg_santorini_1_67
+  - first:
+      213: 3511830398262960489
+    second: bg_santorini_1_68
+  - first:
+      213: 3352425470654180279
+    second: bg_santorini_1_69
+  - first:
+      213: -1395692891555827886
+    second: bg_santorini_1_70
+  - first:
+      213: -4631218238354600306
+    second: bg_santorini_1_71
+  - first:
+      213: 1363488449584763579
+    second: bg_santorini_1_72
+  - first:
+      213: -7551876690224886356
+    second: bg_santorini_1_73
+  - first:
+      213: 5196563829483585109
+    second: bg_santorini_1_74
+  - first:
+      213: 467732786988456213
+    second: bg_santorini_1_75
+  - first:
+      213: 182310675209684968
+    second: bg_santorini_1_76
+  - first:
+      213: 6673956003983435274
+    second: bg_santorini_1_77
+  - first:
+      213: -3439881061926465587
+    second: bg_santorini_1_78
+  - first:
+      213: 5968161628456504134
+    second: bg_santorini_1_79
+  - first:
+      213: -2902969362228469343
+    second: bg_santorini_1_80
+  - first:
+      213: -8312962322233581393
+    second: bg_santorini_1_81
+  - first:
+      213: -1454378180703291304
+    second: bg_santorini_1_82
+  - first:
+      213: 2024610167561700451
+    second: bg_santorini_1_83
+  - first:
+      213: 8151852661072516883
+    second: bg_santorini_1_84
+  - first:
+      213: 3330150688305268
+    second: bg_santorini_1_85
+  - first:
+      213: 5865026210074669265
+    second: bg_santorini_1_86
+  - first:
+      213: 8950159370762321089
+    second: bg_santorini_1_87
+  - first:
+      213: -2088406131278349827
+    second: bg_santorini_1_88
+  - first:
+      213: -7444444053342249831
+    second: bg_santorini_1_89
+  - first:
+      213: 6975828526502867753
+    second: bg_santorini_1_90
+  - first:
+      213: -3790607387533374830
+    second: bg_santorini_1_91
+  - first:
+      213: -4558559941677619852
+    second: bg_santorini_1_92
+  - first:
+      213: -5027039647744675293
+    second: bg_santorini_1_93
+  - first:
+      213: -1407281932756888366
+    second: bg_santorini_1_94
+  - first:
+      213: 7264950795131526946
+    second: bg_santorini_1_95
+  - first:
+      213: 1202837327790562780
+    second: bg_santorini_1_96
+  - first:
+      213: 6424498320176164445
+    second: bg_santorini_1_97
+  - first:
+      213: 8894836184604513020
+    second: bg_santorini_1_98
+  - first:
+      213: -7099820483019998664
+    second: bg_santorini_1_99
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -75,9 +375,2133 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: bg_santorini_1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 648
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b94b8dfff6b344f60800000000000000
+      internalID: 8017598588846126235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 648
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5143d44bf62c3f9b0800000000000000
+      internalID: -5047476972330077163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 648
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb20aa41fb610f4a0800000000000000
+      internalID: -6561719647137561924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 648
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5092fb12cc234d500800000000000000
+      internalID: 420016517573191941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 648
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0c709789c611a50800000000000000
+      internalID: 6490087940138975466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 648
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6c90072dd358040800000000000000
+      internalID: 4649190164362020532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 648
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55095d98b55a62840800000000000000
+      internalID: 5199024632418898005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 648
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7a7462b23d28c20800000000000000
+      internalID: 3207358066920499104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 648
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6dfa23b76d24d3f0800000000000000
+      internalID: -877026104019583633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 648
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf4afed869b666a0800000000000000
+      internalID: -6456269155720343610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb2bcfbb56ed1d8c0800000000000000
+      internalID: -3976152467464473922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_11
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 576
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2937c5c3836a111e0800000000000000
+      internalID: -2228817580110613614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_12
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 576
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2145ab95a042d66e0800000000000000
+      internalID: -1842777045651008494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_13
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 576
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb2060008872ff830800000000000000
+      internalID: 4107044850254611132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_14
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 576
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da4bc70404a7f1680800000000000000
+      internalID: -8782166331970767699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_15
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 576
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db78a1699c0822700800000000000000
+      internalID: 514114910768760765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_16
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 576
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec45c33030e12d90800000000000000
+      internalID: -7124166637891793689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_17
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 576
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a953113143879ede0800000000000000
+      internalID: -1303378452093520486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_18
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 576
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91f5e61e81c862d70800000000000000
+      internalID: 9018049342345207577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_19
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 576
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c0ded510e8122260800000000000000
+      internalID: 7071241715643764934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 504
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f708d2a79a1a08c40800000000000000
+      internalID: 5512583693172834431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_21
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 504
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c753fcf25e766820800000000000000
+      internalID: 2911153104037828551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_22
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 504
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6122ad94fd11a99d0800000000000000
+      internalID: -2766879370351336938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_23
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 504
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d0227af305959230800000000000000
+      internalID: 3644983317745508563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_24
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 504
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4e32a4ad4d3e8c0800000000000000
+      internalID: -3971096412398820102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_25
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 504
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec86d2bdabafc3c0800000000000000
+      internalID: -4337059153616401172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_26
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 504
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 402b2dd676d9b4ee0800000000000000
+      internalID: -1275753001879686652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_27
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 504
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d96a47996b030a0800000000000000
+      internalID: -6903817458555642577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_28
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 504
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b34eaab66774855e0800000000000000
+      internalID: -1920706667135441861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_29
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 504
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6c739d996796920800000000000000
+      internalID: 2984046631256049375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca081477f4e6a360800000000000000
+      internalID: 7180678407344622276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_31
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 432
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776cf88c155250260800000000000000
+      internalID: 7063092623787935351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_32
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 432
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f230bb7ee1c3b5960800000000000000
+      internalID: 7591727700297581359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_33
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 432
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c532b93b0b4ef060800000000000000
+      internalID: 6989106183310292422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_34
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 432
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2227e0bd85a116f10800000000000000
+      internalID: 2261117456851300898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_35
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 432
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 235d3d120f8b8d6e0800000000000000
+      internalID: -1812495508517432014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_36
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 432
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e77a9c7d393786a0800000000000000
+      internalID: -6447121405311289369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_37
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 432
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb349c94f3313440800000000000000
+      internalID: 4913765794129918912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_38
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 432
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502de8be8b1d04e40800000000000000
+      internalID: 5638737325624054277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_39
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 432
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d63ec62f9775f20800000000000000
+      internalID: 3411329324872330602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40cce957df05483a0800000000000000
+      internalID: -6664112499071202300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_41
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 360
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35adf3f01ed62ffa0800000000000000
+      internalID: -5768427359317271981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_42
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 360
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09ba19fccbac749a0800000000000000
+      internalID: -6248803045668181104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_43
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 360
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41e81846699a5fd0800000000000000
+      internalID: -2352399190772358837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_44
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 360
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb5abd108bdfe810800000000000000
+      internalID: 1796896119645166557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_45
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 360
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488abe13dc18e4b70800000000000000
+      internalID: 8885181833154373764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_46
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 360
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715a8b616b5814db0800000000000000
+      internalID: -4809415909943237353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_47
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 360
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d527b4771e7c3580800000000000000
+      internalID: -8846056928854989357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_48
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 360
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6512237c55f4ed8b0800000000000000
+      internalID: -5125572096068279978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_49
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 360
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a728ccb217a55da0800000000000000
+      internalID: -5956671233209129055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd3f5287b297d850800000000000000
+      internalID: 6401746712194399668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_51
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 472b63b673ac56aa0800000000000000
+      internalID: -6168301775243267468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_52
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 288
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b943f587d189dda30800000000000000
+      internalID: 4241713676393854107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_53
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 288
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e666b818c5e9350800000000000000
+      internalID: 6025355062927584810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_54
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 288
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f67c6caa9838a2270800000000000000
+      internalID: 8226532296644544367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_55
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 288
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b92d46957005cbc0800000000000000
+      internalID: -3763601408565368399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_56
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 288
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc418cdefe942510800000000000000
+      internalID: 1523517391416413427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_57
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 288
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665bfdf47e470ed90800000000000000
+      internalID: -7070522878145350298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_58
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 288
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 816b7d8d0714c81b0800000000000000
+      internalID: -5653071479326657000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_59
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 288
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 613a4c613766d5210800000000000000
+      internalID: 1323326510006051606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 216
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e90bbfd4ae4553d90800000000000000
+      internalID: -7118690270681780066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_61
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 216
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c1adfa1b07224f0800000000000000
+      internalID: -854997070785143687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_62
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 216
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf31052edeab5d40800000000000000
+      internalID: 5574241232927932351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_63
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 216
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77b1a8344f944da0800000000000000
+      internalID: -5961464891374979205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_64
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 216
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 932e8ec41d0a9d4f0800000000000000
+      internalID: -803434237709983175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_65
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 216
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eed0573ce465bba80800000000000000
+      internalID: -8450065379543937554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_66
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 216
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c08dd74ebe25cdc90800000000000000
+      internalID: -7143743735812204532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_67
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 216
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b90823e8d754db9b0800000000000000
+      internalID: -5062814000535666533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_68
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 216
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961e1e704278cb030800000000000000
+      internalID: 3511830398262960489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_69
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 216
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb60522435368e20800000000000000
+      internalID: 3352425470654180279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25fe647b5b081ace0800000000000000
+      internalID: -1395692891555827886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_71
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 144
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e4099ac8b9abfb0800000000000000
+      internalID: -4631218238354600306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_72
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 144
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb219d455851ce210800000000000000
+      internalID: 1363488449584763579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_73
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 144
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cadc79b6928523790800000000000000
+      internalID: -7551876690224886356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_74
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 144
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55e33053547ed1840800000000000000
+      internalID: 5196563829483585109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_75
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 144
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 519104add78bd7600800000000000000
+      internalID: 467732786988456213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_76
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 144
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e782aad792b78200800000000000000
+      internalID: 182310675209684968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_77
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 144
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06a40020a7ae9c50800000000000000
+      internalID: 6673956003983435274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_78
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 144
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf874246661340d0800000000000000
+      internalID: -3439881061926465587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_79
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 144
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64b4442616b23d250800000000000000
+      internalID: 5968161628456504134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1a782eeb496b7d0800000000000000
+      internalID: -2902969362228469343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_81
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 72
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0af08dfcc62ac80800000000000000
+      internalID: -8312962322233581393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_82
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 72
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 858f91210c201dbe0800000000000000
+      internalID: -1454378180703291304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_83
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 72
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 364c826783cd81c10800000000000000
+      internalID: 2024610167561700451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_84
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 72
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 317dc8c0ec2312170800000000000000
+      internalID: 8151852661072516883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_85
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 72
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47033d021c4db0000800000000000000
+      internalID: 3330150688305268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_86
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 72
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d03bd98342c46150800000000000000
+      internalID: 5865026210074669265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_87
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 72
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ccfb69178a553c70800000000000000
+      internalID: 8950159370762321089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_88
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 72
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df9f76e30bd7403e0800000000000000
+      internalID: -2088406131278349827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_89
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 72
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99c144a639500b890800000000000000
+      internalID: -7444444053342249831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9237d38d51f1fc060800000000000000
+      internalID: 6975828526502867753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_91
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a0a1f1aae056bc0800000000000000
+      internalID: -3790607387533374830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_92
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 475eaf4a2edbcb0c0800000000000000
+      internalID: -4558559941677619852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_93
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 322bf54231e5c3ab0800000000000000
+      internalID: -5027039647744675293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_94
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4533bc984587ce0800000000000000
+      internalID: -1407281932756888366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_95
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f918eb14a42d460800000000000000
+      internalID: 7264950795131526946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_96
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd598d3d2651b010800000000000000
+      internalID: 1202837327790562780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_97
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ea13a0f27682950800000000000000
+      internalID: 6424498320176164445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_98
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf294ae026ec07b70800000000000000
+      internalID: 8894836184604513020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_santorini_1_99
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83afc8c13ee587d90800000000000000
+      internalID: -7099820483019998664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -13,12 +13,20 @@ public class EnemyHealth : MonoBehaviour
 
     public Transform damagePoint;
 
+    //RandomTime
+    private float randomAttackTime = 2f;
+    private float currentRandomAttackTime = 0f;
+    private Vector3 pastPos;
+    [Header("Level Enemies")]
+    public int level=0;
+
     private void Awake()
     {
+        currentRandomAttackTime = 0f;
         animator = gameObject.GetComponent<Animator>();
     }
    
-
+   
     internal void TakeCritDamage(object p)
     {
         throw new System.NotImplementedException();
@@ -31,6 +39,47 @@ public class EnemyHealth : MonoBehaviour
         currentHealth = maxHealth;
         if (healthBar != null)
             healthBar.value = (currentHealth * 100 / maxHealth);
+    }
+    private void Update()
+    {
+        if (currentRandomAttackTime <= 0 && level > 0)
+        {
+            if (RandomAttack())
+            {
+                //AnimatorStateInfo index =  animator.GetCurrentAnimatorStateInfo(0);
+                PlayerHealth playerHealth = FindObjectOfType<PlayerHealth>();
+                if (playerHealth == null) return;
+                bool IsRight = playerHealth.transform.position.x > transform.position.x;
+                pastPos = transform.localScale;
+                if (IsRight)
+                    transform.localScale = new Vector3(1, 1, 1);
+                else transform.localScale = new Vector3(-1, 1, 1);
+                //Debug.Log("Attack Player");
+                animator.SetTrigger("Attack");
+                StartCoroutine(WaitPlayerDie(2f));
+            }
+            currentRandomAttackTime = randomAttackTime;
+        }
+        else
+            currentRandomAttackTime -= Time.deltaTime;
+    }
+    private IEnumerator WaitPlayerDie(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        transform.localScale = pastPos;
+    }
+
+
+    private bool RandomAttack()
+    {
+        if (isDie == true) return false;
+        if (currentHealth < maxHealth/2 || level >=2)
+        {
+            float[] rate = { 50, 50 };
+            float result = GameRandom.Choose(rate);
+            return result == 0 ? false : true;
+        }
+        return false;
     }
 
     private void TakeDamage(int damage)
@@ -45,7 +94,7 @@ public class EnemyHealth : MonoBehaviour
         if (currentHealth <= 0 && isDie == false)
         {
             isDie = true;
-            Die();
+            Die(); return;
         }
     }
 
@@ -79,7 +128,6 @@ public class EnemyHealth : MonoBehaviour
             SpawnEffect.instance.SpawnDamageCritEffect(damagePoint.position + new Vector3(range, 0), Quaternion.identity, damage);
     }
 
-
     public void Die()
     {
         animator.SetTrigger("Death");
@@ -97,6 +145,8 @@ public class EnemyHealth : MonoBehaviour
         Gamelogic gamelogic = FindObjectOfType<Gamelogic>();
         if (gamelogic != null)
             gamelogic.KillNewEnemy(gameObject);
+        AudioManager.instance.PlayOneShot("Enemy_Death");
+
     }
 
 

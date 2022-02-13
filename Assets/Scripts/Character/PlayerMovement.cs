@@ -60,6 +60,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && jumpStep > 0)
         {
+            AudioManager.instance.PlayOneShot("Player_Jump");
             Instantiate(dustEffect, groundSensor.position, groundSensor.rotation);
             animator.SetBool("IsJump", true);
             rigidbody2d.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);

@@ -6,23 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: 64f54ef1631d1364cbf45e4880553c7e
-  - enabled: 1
-    path: Assets/Scenes/Levels/Snow Scence.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Intro.unity
+    guid: ae18a43d8e9118448b5f938fd6fa40c0
   - enabled: 1
     path: Assets/Scenes/SelectLevel.unity
     guid: bc52eaa42fca49648aefe855dea27d47
   - enabled: 1
-    path: Assets/Scenes/Levels/Level1.unity
-    guid: 0b4f52dd3c5357140bd6f1c8cdd603a3
+    path: Assets/Scenes/Menu.unity
+    guid: 64f54ef1631d1364cbf45e4880553c7e
   - enabled: 1
-    path: Assets/Scenes/Levels/Level21.unity
-    guid: 8c26f7c6bba50304bab6c045a94575f6
-  - enabled: 1
-    path: Assets/Scenes/Levels/Jungle.unity
-    guid: 2993abb3a207730428838591cb069cb4
+    path: Assets/Scenes/Levels/Dark.unity
+    guid: 3542737d5c69a524ebfeb4d3b9fdba03
   - enabled: 1
     path: Assets/Scenes/Levels/Des.unity
     guid: b2edb440dd091234b9f2c77f6ab55e93
@@ -31,23 +25,23 @@ EditorBuildSettings:
     guid: a5bf8a892e5d0c248bde3f6848bb8aca
   - enabled: 1
     path: Assets/Scenes/Levels/Forrest.unity
-    guid: bc60a71bdb26799408161724c67bf5ba
+    guid: 0434bf21b296f964e8bfacd3b0142b73
   - enabled: 1
-    path: Assets/Scenes/Levels/Level1-1.unity
-    guid: 3f86b8c3cf996904b8930bf6c0ab117a
+    path: Assets/Scenes/Levels/Jungle.unity
+    guid: 2993abb3a207730428838591cb069cb4
   - enabled: 1
-    path: Assets/Scenes/Levels/Level2.unity
-    guid: a9444c3d2113cb44a929706c633213bf
+    path: Assets/Scenes/Levels/Level1.unity
+    guid: 0b4f52dd3c5357140bd6f1c8cdd603a3
   - enabled: 1
     path: Assets/Scenes/Levels/Level3.unity
     guid: bdf8c95570d643d46819508741772b05
   - enabled: 1
-    path: Assets/Scenes/Levels/SampleScene 1.unity
-    guid: 3542737d5c69a524ebfeb4d3b9fdba03
+    path: Assets/Scenes/Levels/Sand.unity
+    guid: 52da1b0c0cd72904785f2292c7564b2e
+  - enabled: 1
+    path: Assets/Scenes/Levels/Snow.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Levels/Volcano.unity
     guid: fa88fdf0851259347aa4fa172f171f3d
-  - enabled: 1
-    path: Assets/Scenes/Intro.unity
-    guid: ae18a43d8e9118448b5f938fd6fa40c0
   m_configObjects: {}

@@ -14,8 +14,10 @@ public class Gamelogic : MonoBehaviour
     public Transform startPosition;
     //Mission kill Enemies
     public GameMission gameMission;
+    public int currentLevel;
 
-    private void Awake()
+   
+    private void Start()
     {
         savePoint = startPosition.position;
         SpawnPlayer(savePoint);
@@ -29,7 +31,6 @@ public class Gamelogic : MonoBehaviour
         GameObject player = playerFactory.SpawnPlayer(pos);
         vcam.Follow = player.transform;
     }
-
 
     private void OnEnable()
     {
@@ -59,18 +60,50 @@ public class Gamelogic : MonoBehaviour
 
     public void WinGame(GameObject game)
     {
-        if (gameMission == null)
+        if (gameMission == null || gameMission.IsCompleteMission())
         {
+         
             winGameUI.gameObject.SetActive(true);
+            int stars;
+            if (gameMission != null)
+                stars = gameMission.CountStar();
+            else
+                stars = 3;
+            if (GameStorageManager.gameInfo.levels == null) return;
+
+            currentLevel =  GetCurrentLevel();
+            LevelInfo levelInfo = GameStorageManager.gameInfo.levels[currentLevel];
+            levelInfo.stars = stars;
+            bool IsPassLevel = stars >= 0;
+            int nextLevel = currentLevel+1;
+
+            if (IsPassLevel == true)
+            {
+                levelInfo.state = LEVEL_STATE.PASSED;
+                if (GameStorageManager.gameInfo.levels.Count > currentLevel + 1 &&
+                    GameStorageManager.gameInfo.levels[nextLevel].state == LEVEL_STATE.LOCK)
+                    GameStorageManager.gameInfo.levels[nextLevel].state = LEVEL_STATE.OPENING;
+                //Debug.Log("Current Level: " + levelInfo.name + "---" + levelInfo.stars + "--" + levelInfo.state);
+                //LevelInfo nextLevelInfo = GameStorageManager.gameInfo.levels[nextLevel];
+                //Debug.Log("Next level: " + nextLevelInfo.name + "--" + nextLevelInfo.stars + "---" + nextLevelInfo.state);
+            }
+         
+            GameStorageManager.SaveGameInfo();
             Time.timeScale = 0.0f;
+            
         }
-        //If level Complete
-        else if (gameMission.IsCompleteMission())
+    }
+
+    private int GetCurrentLevel()
+    {
+        List<LevelInfo> levels = GameStorageManager.gameInfo.levels;
+        Scene scene = SceneManager.GetActiveScene();
+       // Debug.Log("Current Level: " + scene);
+        for (int i = 0; i < levels.Count; i++)
         {
-            //Destroy(game, 1f);
-            winGameUI.gameObject.SetActive(true);
-            Time.timeScale = 0.0f;
+            if (levels[i].name.Equals(scene.name)) return i;
         }
+        return 0;
     }
 
     public void PlayAgain()
@@ -83,7 +116,11 @@ public class Gamelogic : MonoBehaviour
     }
     public void PlayGameAgain()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        string name = SceneManager.GetActiveScene().name;
+        if (LevelLoader.Instance != null)
+            LevelLoader.Instance.LoadLevel(name);
+        else
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void KillNewEnemy(GameObject enemy)
     {

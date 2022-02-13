@@ -25,13 +25,20 @@ public class Enemy : MonoBehaviour
     [SerializeField] private LayerMask playerLayer;
     protected PlayerHealth playerHealth;
 
-    [Header("Ice")]
-    private const float freezeTime = 10f;
+    [Header("Water Bullet")]
+    private const float freezeTime = 5f;
     private float currentFreezeTime = 0f;
+
+    [Header("ICE Bullete")]
+    private const float iceTime = 5f;
+    private float currentIceTime = 0f;
+
     Animator animator;
+    SpriteRenderer sr;
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>();
     }
     public bool IsFreeze()
     {
@@ -45,7 +52,21 @@ public class Enemy : MonoBehaviour
             if (animator.enabled != true)
                 animator.enabled = true;
         }
+        if (currentIceTime <= 0)
+        {
+            if (animator != null)
+            {
+                animator.speed = 1f;
+                sr.color = Color.white;
+                //speed *= 2f;
+            }
+        }
+        else
+            currentIceTime -= Time.deltaTime;
+
     }
+
+  
     public bool PlayerInSight()
     {
         if (this.IsFreeze() == true) return false;
@@ -62,17 +83,27 @@ public class Enemy : MonoBehaviour
     }
 
     public void Freeze()
-    {
-        if (this.IsFreeze() == true) return;
-      
+    { 
+        if (this.IsFreeze() == true) { currentFreezeTime = freezeTime; return; };
+        currentFreezeTime = freezeTime;
         if (animator != null)
             animator.enabled = false;
-        currentFreezeTime = freezeTime;
+
         //View waterball
         Bounds bounds = GetComponent<Collider2D>().bounds;
-        GameObject waterBall = SpawnEffect.instance.SpawnWaterBall(transform.position,bounds );
+        GameObject waterBall = SpawnEffect.instance.SpawnWaterBall(transform.position, bounds);
         waterBall.transform.parent = gameObject.transform;
         Destroy(waterBall, freezeTime);
+    }
+    public void SlowSpeed()
+    {
+        currentIceTime = iceTime;
+        if (animator != null &&  sr!=null)
+        {
+            animator.speed = 0.25f;
+            sr.color = Color.blue;
+            //speed /= 2f;
+        }
     }
 
     protected virtual void DamagePlayer()

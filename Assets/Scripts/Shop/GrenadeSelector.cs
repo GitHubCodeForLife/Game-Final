@@ -52,6 +52,7 @@ public class GrenadeSelector : MonoBehaviour
 
     public void SelectGrenade(int index)
     {
+        if (priceButton == null) return;
         currentGrenade = index;
        
         GrenadeShop grenadeShop = grenadeShops[index];
@@ -87,6 +88,7 @@ public class GrenadeSelector : MonoBehaviour
 
     public void BuyGrenade()
     {
+    
         if (GameStorageManager.shopInfo.grenades[currentGrenade].state == STATE_ITEM.BOUGHT)
         {
             for (int i = 0; i < GameStorageManager.shopInfo.grenades.Count; i++)
@@ -102,6 +104,10 @@ public class GrenadeSelector : MonoBehaviour
         else
         {
             //Remember Check Gold before BUY
+            int price = GameStorageManager.shopInfo.grenades[currentGrenade].price;
+            bool purchase = ShopKeeper.instance.Purchase(price);
+            if (purchase == false) return;
+
             GameStorageManager.shopInfo.grenades[currentGrenade].state = STATE_ITEM.BOUGHT;
         }
         GameStorageManager.SaveShopInfo();

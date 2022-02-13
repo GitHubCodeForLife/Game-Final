@@ -16,7 +16,7 @@ public class MolotovCocktail : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
      
-        if (collision.name.Equals("Ground"))
+        if (collision.CompareTag("Ground"))
         {
             ///Debug.Log("Boom");
             Explore();
@@ -26,6 +26,7 @@ public class MolotovCocktail : MonoBehaviour
 
     public void Explore()
     {
+        AudioManager.instance.PlayOneShot("Grenade_Molotov");
         Vector3 pos = new Vector3(-range/2*0.5f, 0f, 0);
         //Show Effect 
         for (int i = 0; i < range; i++)

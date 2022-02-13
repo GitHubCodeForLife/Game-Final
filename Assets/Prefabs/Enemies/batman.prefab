@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 337502172}
   - component: {fileID: 1465623667}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Damge Point
-  m_TagString: Untagged
+  m_TagString: Effect
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68,7 +68,7 @@ GameObject:
   - component: {fileID: 2481295820688427998}
   - component: {fileID: 2481295820688427996}
   - component: {fileID: 2481295820688427999}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144,7 +144,7 @@ GameObject:
   - component: {fileID: 2481295820887010663}
   - component: {fileID: 2481295820887010662}
   - component: {fileID: 2481295820887010665}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -373,6 +373,7 @@ MonoBehaviour:
   healthBar: {fileID: 2481295822301775099}
   isDie: 0
   damagePoint: {fileID: 337502172}
+  level: 1
 --- !u!50 &2132034033
 Rigidbody2D:
   serializedVersion: 4
@@ -381,7 +382,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2481295820957868630}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -411,7 +412,6 @@ MonoBehaviour:
   maxMovingTimer: 5
   minMovingTimer: 1
   speed: 3
-  direction: 1
   damage: 10
   force: 2
   range: 0.83
@@ -431,7 +431,7 @@ GameObject:
   - component: {fileID: 2481295822301775101}
   - component: {fileID: 2481295822301775099}
   - component: {fileID: 2481295822301775098}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Health Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -564,7 +564,7 @@ GameObject:
   - component: {fileID: 2481295822713653934}
   - component: {fileID: 2481295822713653932}
   - component: {fileID: 2481295822713653935}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
